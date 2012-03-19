@@ -4,7 +4,7 @@
   <title><![CDATA[HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-03-19T15:29:12-04:00</updated>
+  <updated>2012-03-19T15:32:33-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -18,7 +18,7 @@
     <link href="http://HelloWurld.heroku.com/blog/2012/03/19/first-post/"/>
     <updated>2012-03-19T14:59:00-04:00</updated>
     <id>http://HelloWurld.heroku.com/blog/2012/03/19/first-post</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>Well, let&#8217;s give this a go&#8230;</p>
 ]]></content>
   </entry>
   
