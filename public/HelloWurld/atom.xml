@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[HelloWurld]]></title>
+  <link href="http://jreading.github.com/HelloWurld/atom.xml" rel="self"/>
+  <link href="http://jreading.github.com/HelloWurld/"/>
+  <updated>2012-03-19T15:18:56-04:00</updated>
+  <id>http://jreading.github.com/HelloWurld/</id>
+  <author>
+    <name><![CDATA[J.Reading]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[first post]]></title>
+    <link href="http://jreading.github.com/HelloWurld/blog/2012/03/19/first-post/"/>
+    <updated>2012-03-19T14:59:00-04:00</updated>
+    <id>http://jreading.github.com/HelloWurld/blog/2012/03/19/first-post</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
