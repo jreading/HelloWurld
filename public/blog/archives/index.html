@@ -10,7 +10,7 @@
 
   
   <meta name="description" content="Blog Archive 2012 first post
-Mar 19 2012 Recent Posts first post GitHub Repos Status updating... @jreading on GitHub $.domReady(function(){ if (! &hellip;">
+Mar 19 2012 Latest Tweets Status updating... $.domReady(function(){ getTwitterFeed("JohnnyReading", 5, false); }); &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -95,16 +95,23 @@ Mar 19 2012 Recent Posts first post GitHub Repos Status updating... @jreading on
 
 <aside class="sidebar">
   
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
     
-      <li class="post">
-        <a href="/blog/2012/03/19/first-post/">first post</a>
-      </li>
-    
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
   </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("JohnnyReading", 5, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/JohnnyReading" class="twitter-follow-button" data-show-count="false">Follow @JohnnyReading</a>
+  
 </section>
+
 
 <section>
   <h1>GitHub Repos</h1>
@@ -135,23 +142,16 @@ Mar 19 2012 Recent Posts first post GitHub Repos Status updating... @jreading on
   <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
-
 <section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating...</li>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/03/19/first-post/">first post</a>
+      </li>
+    
   </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("JohnnyReading", 5, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/JohnnyReading" class="twitter-follow-button" data-show-count="false">Follow @JohnnyReading</a>
-  
 </section>
-
 
 
 
