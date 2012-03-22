@@ -92,7 +92,7 @@
 
 <p>The &#8220;mobile-first&#8221; approach towards building a site can necessitate the use of polyfills for legacy desktop browsers or just <a href="http://starbucks.com">an awful looking desktop experience</a>.</p>
 
-<p>Looking at <a href="http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/#comment-545128">this comment from a smashing mag post on responsive techniques</a>, this seems like the simpliest approach considering there&#8217;s no need to worry about fallbacks, polyfills, and other workarounds. Why do we have respond.js, Modernzr.mq, jQueryMobile CSS hacks and the like&#8230;</p>
+<p>Looking at <a href="http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/#comment-545128">this comment from a smashing mag post on responsive techniques</a>, this seems like the simpliest approach considering there&#8217;s no need to worry about fallbacks, polyfills, and other workarounds. Why do we have respond.js, Modernzr.mq, jQueryMobile CSS hacks and the like&#8230;?</p>
 
 <figure class='code'><figcaption><span>desktop-first.css  </span></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -132,7 +132,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Combine this with <a href="http://www.leemunroe.com/ie-rounded-corners-css3/">aggressive</a> <a href="https://twitter.com/#!/zeldman/statuses/170930936718950400">enhancement</a>, and a few <a href="http://www.leemunroe.com/adaptive-responsive/">fully responsive techniques</a> and it seems like everything else is just cruft.</p>
+<p>Combine a few (read: keep it simple) of these with <a href="http://www.leemunroe.com/ie-rounded-corners-css3/">aggressive</a> <a href="https://twitter.com/#!/zeldman/statuses/170930936718950400">enhancement</a>, and a few <a href="http://www.leemunroe.com/adaptive-responsive/">fully responsive techniques</a> and it seems like everything else is just cruft.</p>
 
 <p>What if you want to have access to that media query capability in your js? Well, then <a href="http://www.nczonline.net/blog/2012/01/03/css-media-queries-in-javascript-part-1/">you&#8217;re doing it wrong</a>. Styles shouldn&#8217;t ever be bound to so tightly to your app or widget, or even content for that matter.</p>
 
