@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Desktop First: A Reverse Do-Nothing, Responsive Anti-Pattern - HelloWurld</title>
+  <meta name="author" content="J.Reading">
+
+  
+  <meta name="description" content="Well now that I got your attention&#8230; When looking for a good strategy for implementing a responsive design, web devs are bombarded with tons of &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="HelloWurld" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Gudea' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">HelloWurld</a></h1>
+  
+    <h2>Blogging from the Command Line since 2012.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:HelloWurld.heroku.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">⎋</a></li>
+  <li><a href="/blog/archives">☰</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Desktop First: A Reverse Do-Nothing, Responsive Anti-Pattern</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-22T09:33:00-04:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Well now that I got your attention&#8230;</p>
+
+<p>When looking for a good strategy for implementing a responsive design, web devs are bombarded with tons of techniques, libraries, polyfills, and workarounds. <!--more--></p>
+
+<p>The &#8220;mobile-first&#8221; approach towards building a site can necessitate the use of polyfills for legacy desktop browsers or just <a href="http://starbucks.com">an awful looking desktop experience</a>.</p>
+
+<p>Looking at <a href="http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/#comment-545128">this comment from a smashing mag post on responsive techniques</a>, this seems like the simpliest approach considering there&#8217;s no need to worry about fallbacks, polyfills, and other workarounds. Why do we have respond.js, Modernzr.mq, jQueryMobile CSS hacks and the like&#8230;</p>
+
+<figure class='code'><figcaption><span>desktop-first.css  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nf">#main</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span> <span class="m">960px</span><span class="p">;</span> <span class="c">/*oh so fixed width*/</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">header</span> <span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">400px</span><span class="o">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nf">#main</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">max-width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nt">header</span> <span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">float</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Combine this with <a href="http://www.leemunroe.com/ie-rounded-corners-css3/">aggressive</a> <a href="https://twitter.com/#!/zeldman/statuses/170930936718950400">enhancement</a>, and a few <a href="http://www.leemunroe.com/adaptive-responsive/">fully responsive techniques</a> and it seems like everything else is just cruft.</p>
+
+<p>What am I missing?</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">J.Reading</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-22T09:33:00-04:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern/" data-via="JohnnyReading" data-counturl="http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/03/19/first-post/" title="Previous Post: first post">&laquo; first post</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>John Reading</h1>
+  That's me. Lead UI at <a href="http://icrossing.com/">iCrossing.com</a>. Fulltime father, jS'er, craft beer enthuiast, weekend warrior.
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("JohnnyReading", 5, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/JohnnyReading" class="twitter-follow-button" data-show-count="false">Follow @JohnnyReading</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/jreading">@jreading</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jreading',
+            count: 4,
+            skip_forks: false,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern/">Desktop First: A Reverse Do-Nothing, Responsive Anti-Pattern</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/19/first-post/">first post</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - J.Reading -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'hellowurld';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern/';
+        var disqus_url = 'http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
