@@ -8,7 +8,7 @@ categories:
 Well now that I got your attention...
 
 
-When looking for a good strategy for implementing a responsive design, web devs are bombarded with tons of techniques, libraries, polyfills, and workarounds. <!--more-->
+When looking for a good strategy for implementing a responsive design, web devs are bombarded with tons of techniques, libraries, polyfills, and workarounds. Most of the time, we don't need them. <!--more-->
 
 The "mobile-first" approach towards building a site can necessitate the use of polyfills for legacy desktop browsers or just [an awful looking desktop experience](http://starbucks.com). 
 

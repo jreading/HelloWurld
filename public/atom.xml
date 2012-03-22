@@ -4,7 +4,7 @@
   <title><![CDATA[HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-03-22T10:44:34-04:00</updated>
+  <updated>2012-03-22T10:54:04-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -20,7 +20,7 @@
     <id>http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern</id>
     <content type="html"><![CDATA[<p>Well now that I got your attention&#8230;</p>
 
-<p>When looking for a good strategy for implementing a responsive design, web devs are bombarded with tons of techniques, libraries, polyfills, and workarounds. <!--more--></p>
+<p>When looking for a good strategy for implementing a responsive design, web devs are bombarded with tons of techniques, libraries, polyfills, and workarounds. Most of the time, we don&#8217;t need them. <!--more--></p>
 
 <p>The &#8220;mobile-first&#8221; approach towards building a site can necessitate the use of polyfills for legacy desktop browsers or just <a href="http://starbucks.com">an awful looking desktop experience</a>.</p>
 
