@@ -4,7 +4,7 @@
   <title><![CDATA[HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-03-20T09:08:07-04:00</updated>
+  <updated>2012-03-22T10:44:34-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Desktop First: A Reverse Do-Nothing, Responsive Anti-Pattern]]></title>
+    <link href="http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern/"/>
+    <updated>2012-03-22T09:33:00-04:00</updated>
+    <id>http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern</id>
+    <content type="html"><![CDATA[<p>Well now that I got your attention&#8230;</p>
+
+<p>When looking for a good strategy for implementing a responsive design, web devs are bombarded with tons of techniques, libraries, polyfills, and workarounds. <!--more--></p>
+
+<p>The &#8220;mobile-first&#8221; approach towards building a site can necessitate the use of polyfills for legacy desktop browsers or just <a href="http://starbucks.com">an awful looking desktop experience</a>.</p>
+
+<p>Looking at <a href="http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/#comment-545128">this comment from a smashing mag post on responsive techniques</a>, this seems like the simpliest approach considering there&#8217;s no need to worry about fallbacks, polyfills, and other workarounds. Why do we have respond.js, Modernzr.mq, jQueryMobile CSS hacks and the like&#8230;</p>
+
+<figure class='code'><figcaption><span>desktop-first.css  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nf">#main</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span> <span class="m">960px</span><span class="p">;</span> <span class="c">/*oh so fixed width*/</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">header</span> <span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">400px</span><span class="o">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nf">#main</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">max-width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nt">header</span> <span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
+</span><span class='line'>      <span class="k">float</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Combine this with <a href="http://www.leemunroe.com/ie-rounded-corners-css3/">aggressive</a> <a href="https://twitter.com/#!/zeldman/statuses/170930936718950400">enhancement</a>, and a few <a href="http://www.leemunroe.com/adaptive-responsive/">fully responsive techniques</a> and it seems like everything else is just cruft.</p>
+
+<p>What am I missing?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[first post]]></title>

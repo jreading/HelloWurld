@@ -1,0 +1,43 @@
+---
+layout: post
+title: "Desktop First: A Reverse Do-Nothing, Responsive Anti-Pattern"
+date: 2012-03-22 09:33
+comments: true
+categories: 
+---
+Well now that I got your attention...
+
+
+When looking for a good strategy for implementing a responsive design, web devs are bombarded with tons of techniques, libraries, polyfills, and workarounds. <!--more-->
+
+The "mobile-first" approach towards building a site can necessitate the use of polyfills for legacy desktop browsers or just [an awful looking desktop experience](http://starbucks.com). 
+
+Looking at [this comment from a smashing mag post on responsive techniques](http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/#comment-545128), this seems like the simpliest approach considering there's no need to worry about fallbacks, polyfills, and other workarounds. Why do we have respond.js, Modernzr.mq, jQueryMobile CSS hacks and the like...
+
+{% codeblock desktop-first.css lang:css %}
+#main {
+	width: 960px; /*oh so fixed width*/
+}
+
+header nav li {
+	float: left;
+}
+
+@media only screen and (max-width: 400px) {
+	#main {
+		width: 100%;
+		max-width: 400px;
+	}
+	header nav li {
+		float: none;
+	}
+}
+{% endcodeblock %}
+
+Combine this with [aggressive](http://www.leemunroe.com/ie-rounded-corners-css3/) [enhancement](https://twitter.com/#!/zeldman/statuses/170930936718950400), and a few [fully responsive techniques](http://www.leemunroe.com/adaptive-responsive/) and it seems like everything else is just cruft. 
+
+What am I missing?
+
+
+
+

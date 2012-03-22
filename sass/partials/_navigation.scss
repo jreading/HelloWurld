@@ -1,6 +1,13 @@
 body > nav {
-  position: relative;
+  position: fixed;
+  z-index:1000;
+  padding: 24px;
+  top:0px;
+  width: 100%;
   background-color: $nav-bg;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4); 
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
   @include background($nav-bg-front, $nav-bg-back);
   border: {
     top: 1px solid $nav-border-top;
@@ -31,7 +38,7 @@ body > nav {
       }
     }
   }
-  fieldset[role=search]{ float: right; width: 48%; }
+  fieldset[role=search]{ float: right; width: 37%; margin-right: 3em;}
   fieldset.mobile-nav{ float: left; width: 48%;
     select{ width: 100%; font-size: .8em; border: 1px solid #888;}
   }
@@ -46,6 +53,7 @@ body > nav {
     }
     ul.subscription {
       margin-left: .8em;
+      margin-right: 3em;
       float: right;
       li:last-child a { padding-right: 0; }
     }
