@@ -36,8 +36,9 @@ header nav li {
 
 Combine this with [aggressive](http://www.leemunroe.com/ie-rounded-corners-css3/) [enhancement](https://twitter.com/#!/zeldman/statuses/170930936718950400), and a few [fully responsive techniques](http://www.leemunroe.com/adaptive-responsive/) and it seems like everything else is just cruft. 
 
-What am I missing?
+What if you want to have access to that media query capability in your js? Well, then [you're doing it wrong](http://www.nczonline.net/blog/2012/01/03/css-media-queries-in-javascript-part-1/). Styles shouldn't ever be bound to so tightly to you app or widget, or even content for that matter.
 
+What am I missing?
 
 
 
