@@ -38,7 +38,4 @@ Combine a few (read: keep it simple) of these with [aggressive](http://www.leemu
 
 What if you want to have access to that media query capability in your js? Well, then [you're doing it wrong](http://www.nczonline.net/blog/2012/01/03/css-media-queries-in-javascript-part-1/). Styles shouldn't ever be bound to so tightly to your app or widget, or even content for that matter.
 
-What am I missing?
-
-
-
+Large images in CSS? Don't do it. Use fluid images or data-attrs to lazy load the right size from the markup. 
