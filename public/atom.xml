@@ -4,7 +4,7 @@
   <title><![CDATA[HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-03-22T20:55:28-04:00</updated>
+  <updated>2012-03-22T21:13:52-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -69,6 +69,8 @@
 <p>What if you want to have access to that media query capability in your js? Well, then <a href="http://www.nczonline.net/blog/2012/01/03/css-media-queries-in-javascript-part-1/">you&#8217;re doing it wrong</a>. Styles shouldn&#8217;t ever be bound to so tightly to your app or widget, or even content for that matter.</p>
 
 <p>Large images in CSS? Don&#8217;t do it. Use fluid images or data-attrs to lazy load the right size from the markup.</p>
+
+<p>One last thing, if we take a trending approach [such as this by Thierry Koblentz (who&#8217;s a genuine hero)] (http://coding.smashingmagazine.com/2012/03/22/device-agnostic-approach-to-responsive-web-design/) of &#8220;device agnostic,&#8221; there&#8217;s still a presumption that it&#8217;s oldIE or media-query capable. Not a totally unsafe assumption, but when we talk about the &#8220;internet of things,&#8221; who knows&#8230;</p>
 ]]></content>
   </entry>
   
