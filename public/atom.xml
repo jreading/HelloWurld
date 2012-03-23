@@ -4,7 +4,7 @@
   <title><![CDATA[HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-03-22T21:15:19-04:00</updated>
+  <updated>2012-03-22T21:16:55-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -70,7 +70,7 @@
 
 <p>Large images in CSS? Don&#8217;t do it. Use fluid images or data-attrs to lazy load the right size from the markup.</p>
 
-<p>One last thing, if we take a trending approach <a href="http://coding.smashingmagazine.com/2012/03/22/device-agnostic-approach-to-responsive-web-design/">such as this by Thierry Koblentz (who&#8217;s a genuine hero)</a> of &#8220;device agnostic,&#8221; there&#8217;s still a presumption that it&#8217;s oldIE or media-query capable. Not a totally unsafe assumption, but when we talk about the &#8220;internet of things,&#8221; who knows&#8230;</p>
+<p>One last thing, if we take the trending approach <a href="http://coding.smashingmagazine.com/2012/03/22/device-agnostic-approach-to-responsive-web-design/">such as this by Thierry Koblentz (who&#8217;s a genuine hero)</a> of &#8220;device agnostic,&#8221; there&#8217;s still a presumption that it&#8217;s oldIE or media-query capable. Not a totally unsafe assumption, but when we talk about the &#8220;internet of things,&#8221; who knows&#8230;</p>
 ]]></content>
   </entry>
   
