@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ux | HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/ux/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-04-17T12:54:47-04:00</updated>
+  <updated>2012-04-17T13:03:27-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -46,7 +46,7 @@ Testing &amp; Development best practices: TDD vs. CI vs. throwing it at wall
 
 <h2>Less, Sass &amp; Stylus: Why not?</h2>
 
-<p>More interweb dustups lately, this time with <a href="https://github.com/cloudhead/less.js/issues/49#issuecomment-4628059">LESS.js</a>. I've been hearing alot of people sticking with SASS for this very reason (and the bigger issue of less.js looking like abandonware). I've also been hearing about Stylus, but to me, it looks a bit like <a href="https://github.com/twitter/bootstrap/issues/3057">scrHipster motiviational exercise</a>.</p>
+<p>More interweb dustups lately, this time with <a href="https://github.com/cloudhead/less.js/issues/49#issuecomment-4628059">LESS.js</a>. I've been hearing alot of people sticking with SASS for this very reason (and the bigger issue of less.js looking like abandonware). I've also been hearing about Stylus, but to me, it looks a bit like a <a href="https://github.com/twitter/bootstrap/issues/3057">scrHipster motiviational exercise</a>.</p>
 
 <h2>HTML5 beyond the ‘section’ tag: AppCache, WebWorkers, LocalStorage, &amp; DnD</h2>
 
