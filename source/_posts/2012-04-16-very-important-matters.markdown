@@ -10,7 +10,7 @@ I was recently asked to put together a list of the most important issues in UI d
 <!-- more -->
 
 	Modules: AMD, CommonJs & ES.next Patterns & Structure.
-	Responsive Design & RESS: Device Agnostic UI vs. Server Side Sniffing
+	Responsive Design & R+/RESS: Device Agnostic UI vs. Server Side Sniffing
 	Less, Sass & Stylus: Why not?
 	HTML5 beyond the ‘section’ tag: AppCache, WebWorkers, LocalStorage, & DnD
 	ES.next & Harmony: the next JS
@@ -28,7 +28,7 @@ Responsive Design & R+/RESS: Device Agnostic UI vs. Server Side Sniffing
 --
 What's responsive design? Never heard of it...
 
-Ok, I don't live in a treehouse. This is obviously the next sliced bread in the web dev world and still in the early stages. There are [problems](http://www.vannavada.com/?p=35) and ingenious solutions, so what does this all mean for the future. And how do we do our best from a technical perspective, but also from a user expereince perspective. Apparently, there's [still](http://www.useit.com/alertbox/mobile-vs-full-sites.html) [some](http://www.netmagazine.com/opinions/nielsen-wrong-mobile) [debate](http://www.netmagazine.com/interviews/nielsen-responds-mobile-criticism). (Nielsen's MOSTLY wrong).
+Ok, I don't live in a treehouse. This is obviously the next sliced bread in the web dev world and still in the early stages. There are [problems](http://www.vannavada.com/?p=35) and ingenious solutions, so what does this all mean for the future. And how do we do our best from a technical perspective, but also from a user experience perspective. Apparently, there's [still](http://www.useit.com/alertbox/mobile-vs-full-sites.html) [some](http://www.netmagazine.com/opinions/nielsen-wrong-mobile) [debate](http://www.netmagazine.com/interviews/nielsen-responds-mobile-criticism). (Nielsen's MOSTLY wrong).
 
 Less, Sass & Stylus: Why not?
 --
