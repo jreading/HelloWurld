@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ux | HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/ux/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-04-17T13:05:04-04:00</updated>
+  <updated>2012-04-17T13:25:10-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Very Important Matters]]></title>
-    <link href="http://HelloWurld.heroku.com/blog/2012/04/16/very-important-matters/"/>
-    <updated>2012-04-16T17:07:00-04:00</updated>
-    <id>http://HelloWurld.heroku.com/blog/2012/04/16/very-important-matters</id>
+    <link href="http://HelloWurld.heroku.com/blog/2012/04/17/very-important-matters/"/>
+    <updated>2012-04-17T17:07:00-04:00</updated>
+    <id>http://HelloWurld.heroku.com/blog/2012/04/17/very-important-matters</id>
     <content type="html"><![CDATA[<p>I was recently asked to put together a list of the most important issues in UI development on the web today and here's what I came up with:</p>
 
 <!-- more -->
