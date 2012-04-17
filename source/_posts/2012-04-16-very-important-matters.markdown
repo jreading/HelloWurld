@@ -24,7 +24,7 @@ Modules: AMD, CommonJs & ES.next Patterns & Structure.
 
 There was a recent dust-up about [AMD](http://tomdale.net/2012/01/amd-is-not-the-answer/) [lately](http://alexsexton.com/blog/2012/03/my-thoughts-on-amd/) and I was heartened to see (from my own annecdotal research at jsconf) that AMD is a good thing and pre-processing (or not preprocessing) isn't a dealbreaker. There's still a ton of use cases for client-side dependency management and the module pattern is a no-brainer, particularly in a CMS. AMD seems to be dominating now mainly due to require.js and Dojo. [Real modules in es harmony](http://addyosmani.com/writing-modular-js/) will end the debate (not likely).
 
-Responsive Design & RESS: Device Agnostic UI vs. Server Side Sniffing
+Responsive Design & R+/RESS: Device Agnostic UI vs. Server Side Sniffing
 --
 What's responsive design? Never heard of it...
 
