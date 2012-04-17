@@ -4,7 +4,7 @@
   <title><![CDATA[HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-03-22T21:16:55-04:00</updated>
+  <updated>2012-04-17T12:54:47-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Very Important Matters]]></title>
+    <link href="http://HelloWurld.heroku.com/blog/2012/04/16/very-important-matters/"/>
+    <updated>2012-04-16T17:07:00-04:00</updated>
+    <id>http://HelloWurld.heroku.com/blog/2012/04/16/very-important-matters</id>
+    <content type="html"><![CDATA[<p>I was recently asked to put together a list of the most important issues in UI development on the web today and here&#8217;s what I came up with:</p>
+
+<!-- more -->
+
+
+<pre><code>Modules: AMD, CommonJs &amp; ES.next Patterns &amp; Structure.
+Responsive Design &amp; RESS: Device Agnostic UI vs. Server Side Sniffing
+Less, Sass &amp; Stylus: Why not?
+HTML5 beyond the ‘section’ tag: AppCache, WebWorkers, LocalStorage, &amp; DnD
+ES.next &amp; Harmony: the next JS
+JavaScript MVC: when, where &amp; how?
+Testing &amp; Development best practices: TDD vs. CI vs. throwing it at wall 
+</code></pre>
+
+<p>Let&#8217;s dig in&#8230;</p>
+
+<h2>Modules: AMD, CommonJs &amp; ES.next Patterns &amp; Structure.</h2>
+
+<p>There was a recent dust-up about <a href="http://tomdale.net/2012/01/amd-is-not-the-answer/">AMD</a> <a href="http://alexsexton.com/blog/2012/03/my-thoughts-on-amd/">lately</a> and I was heartened to see (from my own annecdotal research at jsconf) that AMD is a good thing and pre-processing (or not preprocessing) isn&#8217;t a dealbreaker. There&#8217;s still a ton of use cases for client-side dependency management and the module pattern is a no-brainer, particularly in a CMS. AMD seems to be dominating now mainly due to require.js and Dojo. <a href="http://addyosmani.com/writing-modular-js/">Real modules in es harmony</a> will end the debate (not likely).</p>
+
+<h2>Responsive Design &amp; RESS: Device Agnostic UI vs. Server Side Sniffing</h2>
+
+<p>What&#8217;s responsive design? Never heard of it&#8230;</p>
+
+<p>Ok, I don&#8217;t live in a treehouse. This is obviously the next sliced bread in the web dev world and still in the early stages. There are <a href="http://www.vannavada.com/?p=35">problems</a> and ingenious solutions, so what does this all mean for the future. And how do we do our best from a technical perspective, but also from a user expereince perspective. Apparently, there&#8217;s <a href="http://www.useit.com/alertbox/mobile-vs-full-sites.html">still</a> <a href="http://www.netmagazine.com/opinions/nielsen-wrong-mobile">some</a> <a href="http://www.netmagazine.com/interviews/nielsen-responds-mobile-criticism">debate</a>. (Nielsen&#8217;s MOSTLY wrong).</p>
+
+<h2>Less, Sass &amp; Stylus: Why not?</h2>
+
+<p>More interweb dustups lately, this time with <a href="https://github.com/cloudhead/less.js/issues/49#issuecomment-4628059">LESS.js</a>. I&#8217;ve been hearing alot of people sticking with SASS for this very reason (and the bigger issue of less.js looking like abandonware). I&#8217;ve also been hearing about Stylus, but to me, it looks a bit like <a href="https://github.com/twitter/bootstrap/issues/3057">scrHipster motiviational exercise</a>.</p>
+
+<h2>HTML5 beyond the ‘section’ tag: AppCache, WebWorkers, LocalStorage, &amp; DnD</h2>
+
+<p>Remy Sharp&#8217;s jsConf talk was truly one of the best and the stuff he said just made sense. <a href="http://speakerdeck.com/u/rem/p/build-anything">Look for yourself</a>.</p>
+
+<h2>ES.next &amp; Harmony: the next JS</h2>
+
+<p>Brenden Eich is still the man. I&#8217;m not counting on Douglas Crockford&#8217;s &#8220;CoffeeScript: The Good Parts&#8221; to hit bookstores soon, but looks like <a href="http://blip.tv/jsconf/jsconf2011-jeremy-ashkenas-5258082">ES Harmony will do it for us</a>. Don&#8217;t be left behind. It&#8217;ll be interesting to see native classes in js and all that <a href="http://edtsech.github.com/">sugar</a>.</p>
+
+<h2>JavaScript MVC: when, where &amp; how?</h2>
+
+<p>Backbone.js, &#8216;nuff said; that&#8217;s the how&#8230; The problem is sometimes people forget the &#8220;when and where?&#8221; Js MVC use case is narrower than people realize, but when done right it&#8217;s a pretty little thing. And Ember? It falls into the same place as jQMobile does for me. Too much sacrifice given for rapid development.</p>
+
+<h2>Testing &amp; Development best practices: TDD vs. CI vs. throwing it at the wall</h2>
+
+<p>I admit I dont do enough testing. There I said it&#8230; I really do want to use <a href="https://github.com/cowboy/grunt">Grunt</a> though. And I was floored by the idea that <a href="https://github.com/fat">Jacob Thornton</a> put forward at jsConf about just releasing test suites and specs and letting the libraries write themselves. Kudos to anyone who does that on github first.</p>
+
+<hr />
+
+<p>This is the conference I&#8217;d like to see. What&#8217;d I forget?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Desktop First: A Reverse Do-Nothing, Responsive Anti-Pattern]]></title>
