@@ -33,7 +33,7 @@ Ok, I don't live in a treehouse. This is obviously the next sliced bread in the 
 Less, Sass & Stylus: Why not?
 --
 
-More interweb dustups lately, this time with [LESS.js](https://github.com/cloudhead/less.js/issues/49#issuecomment-4628059). I've been hearing alot of people sticking with SASS for this very reason (and the bigger issue of less.js looking like abandonware). I've also been hearing about Stylus, but to me, it looks a bit like a [scrHipster motiviational exercise](https://github.com/twitter/bootstrap/issues/3057).
+More interweb dustups lately, this time with [LESS.js](https://github.com/cloudhead/less.js/issues/49#issuecomment-4628059). I've been hearing alot of people sticking with SASS for this very reason (and the bigger issue of less.js looking like abandonware). I've also been hearing about Stylus, but to me, it looks a bit like a [scrHipster motivational exercise](https://github.com/twitter/bootstrap/issues/3057).
 
 HTML5 beyond the ‘section’ tag: AppCache, WebWorkers, LocalStorage, & DnD
 --
