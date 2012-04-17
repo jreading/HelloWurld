@@ -4,7 +4,7 @@
   <title><![CDATA[Category: js | HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/js/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-04-17T16:01:08-04:00</updated>
+  <updated>2012-04-17T16:02:34-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -36,7 +36,7 @@ Testing &amp; Development best practices: TDD vs. CI vs. throwing it at wall
 
 <h2>Modules: AMD, CommonJs &amp; ES.next Patterns &amp; Structure.</h2>
 
-<p>There was a recent dust-up about <a href="http://tomdale.net/2012/01/amd-is-not-the-answer/">AMD</a> <a href="http://alexsexton.com/blog/2012/03/my-thoughts-on-amd/">lately</a> and I was heartened to see (from my own annecdotal research at jsconf) that AMD is a good thing and pre-processing (or not preprocessing) isn't a dealbreaker. There's still a ton of use cases for client-side dependency management and the module pattern is a no-brainer, particularly in a CMS. AMD seems to be dominating now mainly due to require.js and Dojo. <a href="http://addyosmani.com/writing-modular-js/">Real modules in es harmony</a> will end the debate (not likely).</p>
+<p>There was a recent dust-up about <a href="http://tomdale.net/2012/01/amd-is-not-the-answer/">AMD</a> <a href="http://alexsexton.com/blog/2012/03/my-thoughts-on-amd/">lately</a> and I was heartened to see (from my own annecdotal research at jsconf) that AMD is a good thing and pre-processing (or not preprocessing) isn't a dealbreaker. There are still a ton of use cases for client-side dependency management and the module pattern is a no-brainer, particularly in a CMS. AMD seems to be dominating now mainly due to require.js and Dojo. <a href="http://addyosmani.com/writing-modular-js/">Real modules in es harmony</a> will end the debate (not likely).</p>
 
 <h2>Responsive Design &amp; R+/RESS: Device Agnostic UI vs. Server Side Sniffing</h2>
 
