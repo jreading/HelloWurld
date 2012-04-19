@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rwd | HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/rwd/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-04-19T12:10:47-04:00</updated>
+  <updated>2012-04-19T12:14:52-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -18,7 +18,7 @@
     <link href="http://HelloWurld.heroku.com/blog/2012/04/19/responsive-modules/"/>
     <updated>2012-04-19T09:25:00-04:00</updated>
     <id>http://HelloWurld.heroku.com/blog/2012/04/19/responsive-modules</id>
-    <content type="html"><![CDATA[<p>A lot has been said about Responsive Design lately (every time I type that and Ethan Marcotte gets shinny penny). It’s primary a design movement, but the real problem it tries to solve is making content “<a href="http://www.slideshare.net/yiibu/reset-the-web">flow like water</a>.” To me it’s not about media queries, or 100% image widths, it’s about: one url, one codebase, and future-proofing new capabilities to maximize user experience.</p>
+    <content type="html"><![CDATA[<p>A lot has been said about Responsive Design lately (every time I type that and Ethan Marcotte gets shiny penny). It’s primary a design movement, but the real problem it tries to solve is making content “<a href="http://www.slideshare.net/yiibu/reset-the-web">flow like water</a>.” To me it’s not about media queries, or 100% image widths, it’s about: one url, one codebase, and future-proofing new capabilities to maximize user experience.</p>
 
 <p>Therefore, I give you: <strong>Responsive Modules</strong> (send your <a href="https://twitter.com/#!/johnnyreading">pennies</a>).</p>
 

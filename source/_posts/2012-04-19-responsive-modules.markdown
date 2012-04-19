@@ -5,7 +5,7 @@ date: 2012-04-19 09:25
 comments: true
 categories: [js, rwd, amd] 
 ---
-A lot has been said about Responsive Design lately (every time I type that and Ethan Marcotte gets shinny penny). It’s primary a design movement, but the real problem it tries to solve is making content “[flow like water]( http://www.slideshare.net/yiibu/reset-the-web).” To me it’s not about media queries, or 100% image widths, it’s about: one url, one codebase, and future-proofing new capabilities to maximize user experience.
+A lot has been said about Responsive Design lately (every time I type that and Ethan Marcotte gets shiny penny). It’s primary a design movement, but the real problem it tries to solve is making content “[flow like water]( http://www.slideshare.net/yiibu/reset-the-web).” To me it’s not about media queries, or 100% image widths, it’s about: one url, one codebase, and future-proofing new capabilities to maximize user experience.
 
 Therefore, I give you: **Responsive Modules** (send your [pennies](https://twitter.com/#!/johnnyreading)).
 <!-- more -->
