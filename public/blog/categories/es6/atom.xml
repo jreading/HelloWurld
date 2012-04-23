@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: es6 | HelloWurld]]></title>
+  <link href="http://HelloWurld.heroku.com/blog/categories/es6/atom.xml" rel="self"/>
+  <link href="http://HelloWurld.heroku.com/"/>
+  <updated>2012-04-23T13:07:36-04:00</updated>
+  <id>http://HelloWurld.heroku.com/</id>
+  <author>
+    <name><![CDATA[J.Reading]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[JS Classes ain't dead yet]]></title>
+    <link href="http://HelloWurld.heroku.com/blog/2012/04/23/js-classes-aint-dead-yet/"/>
+    <updated>2012-04-23T12:59:00-04:00</updated>
+    <id>http://HelloWurld.heroku.com/blog/2012/04/23/js-classes-aint-dead-yet</id>
+    <content type="html"><![CDATA[<p>Interesting stuff coming out about js Classes in Alex Russell's <a href="http://infrequently.org/2012/04/class-warfare/">blog post</a>.</p>
+
+<p>I'm a of <a href="http://hellowurld.heroku.com/blog/2012/04/19/responsive-modules/">fan</a> of <a href="https://github.com/jreading/JsModuleBoilerplate">classes</a> for some things in js (modular widgets, mostly). So I hope this fight is not over. Max/Min is all I really want anyway.</p>
+
+<p>Here's a great response by <a href="https://plus.google.com/u/1/116910304844117268718/posts/WRWBXpi5e2f">Malte Ubl</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
