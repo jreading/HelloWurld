@@ -3,7 +3,7 @@ layout: post
 title: "JS Classes ain't dead yet"
 date: 2012-04-23 12:59
 comments: true
-categories: [classes.tc39,es6]
+categories: [classes,tc39,es6]
 ---
 Interesting stuff coming out about js Classes in Alex Russell's [blog post](http://infrequently.org/2012/04/class-warfare/).
 
