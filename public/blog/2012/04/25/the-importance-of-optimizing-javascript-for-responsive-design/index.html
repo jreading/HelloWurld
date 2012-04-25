@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>JS Classes ain't dead yet - HelloWurld</title>
+  <title>The Importance of Optimizing JavaScript for Responsive Design - HelloWurld</title>
   <meta name="author" content="J.Reading">
 
   
-  <meta name="description" content="Interesting stuff coming out about js Classes in Alex Russell&#8217;s blog post. I&#8217;m a of fan of classes for some things in js (modular widgets &hellip;">
+  <meta name="description" content="So many responsive design solutions involve client-side detection, polyfills, data-attrs and event remapping. This all works fine, but as more and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://HelloWurld.heroku.com/blog/2012/04/23/js-classes-aint-dead-yet">
+  <link rel="canonical" href="http://HelloWurld.heroku.com/blog/2012/04/25/the-importance-of-optimizing-javascript-for-responsive-design">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -63,7 +63,7 @@
   
   <header>
     
-      <h1 class="entry-title">JS Classes Ain't Dead Yet</h1>
+      <h1 class="entry-title">The Importance of Optimizing JavaScript for Responsive Design</h1>
     
     
       <p class="meta">
@@ -79,18 +79,65 @@
   
 
 
-<time datetime="2012-04-23T12:59:00-04:00" pubdate data-updated="true">Apr 23<span>rd</span>, 2012</time>
+<time datetime="2012-04-25T13:17:00-04:00" pubdate data-updated="true">Apr 25<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Interesting stuff coming out about js Classes in Alex Russell&#8217;s <a href="http://infrequently.org/2012/04/class-warfare/">blog post</a>.</p>
+<div class="entry-content"><p>So many responsive design solutions involve client-side detection, polyfills, data-attrs and event remapping. This all works fine, but as more and more sites begin to move toward a responsive design the importance of JavaScript optimization is more relevant than ever. More often than not, implementing a responsive design means more JavaScript and more logic. The Kb size debate for responsive sites is important, but often overlooked is the computational impact.</p>
 
-<p>I&#8217;m a of <a href="http://hellowurld.heroku.com/blog/2012/04/19/responsive-modules/">fan</a> of <a href="https://github.com/jreading/JsModuleBoilerplate">classes</a> for some things in js (modular widgets, mostly). So I hope this fight is not over. Max/Min is all I really want anyway.</p>
+<p>I’m not a micro-optimization troll (there’s plenty of that out there), but it’s shocking how some devices perform with the simple things we all take for granted. I would argue that for most devices, processing and latency are more important than Kb size.</p>
 
-<p>Here&#8217;s a great response by <a href="https://plus.google.com/u/1/116910304844117268718/posts/WRWBXpi5e2f">Malte Ubl</a>.</p>
+<p>So let’s take a look…</p>
+
+<!-- more -->
+
+
+<p>One of my favorite talks from JsConf 2012 was <a href="https://twitter.com/#!/jdalton">JDalton’s</a> “The Hidden Cost of Javascript Natives.” While admitting that some stuff was getting into unnecessary micro-optimization, the tests he showed were quite interesting.</p>
+
+<p>I thought I would look at some of these things from a mobile/RWD perspective. It’s important to remember that I’m not really looking at how the tests perform against each other, but how the devices perform against Chrome, Firefox and Safari. Often there’s not going to be an appreciable difference for most things, these tests illustrate that Mobile Safari isn’t going to process js as fast as Chrome 18.</p>
+
+<h2><a href="http://jsperf.com/touch-events-exists">For..In loops</a> </h2>
+
+<p>These are often called out as being hogs (the “for” loop still kills everything else), but they are necessary for doing capabilities tests.</p>
+
+<p><img src="http://content.screencast.com/users/JReading/folders/Jing/media/da63f2fc-d53c-4d27-96e9-285212f0adcb/00000065.png" alt="Alt text" /></p>
+
+<p>It’s amazing how poorly some devices perform. I’m not saying that Modernzr is going to kill your Android 2.0 phone, but these things add up.</p>
+
+<h2><a href="http://jsperf.com/jquery-data-vs-html-data-reading/3">Data Attributes</a></h2>
+
+<p>The staple of any responsive images implementation performs horribly. Interesting that only mobile Safari and Webkit prefer the native dataset implementation.</p>
+
+<p><img src="http://content.screencast.com/users/JReading/folders/Jing/media/73c69e5f-6184-4ee6-ba25-0d8449b8fda5/00000064.png" alt="Alt text" /></p>
+
+<p><a href="http://jsperf.com/data-vs-attr-data/4">Here’s another look at it</a>.</p>
+
+<h2><a href="http://jsperf.com/prepend-append">jQuery Prepend/Append</a></h2>
+
+<p>Optimization zealot’s favorite pariah (<a href="http://jsperf.com/jquery-vs-native-appendchild">and rightfully so</a>), this is a biggie on mobile.</p>
+
+<p><img src="http://content.screencast.com/users/JReading/folders/Jing/media/509a5f42-73b7-4d48-a213-ebc33a712c63/00000066.png" alt="Alt text" /></p>
+
+<p>2000 op/sec is ghastly, but how many items are you appending really? In a client-side MVC, it could get into the hundreds. It&#8217;s all cumulative after all&#8230;</p>
+
+<h2><a href="http://jsperf.com/optimising-dom-access">DOM access</a></h2>
+
+<p>Going to the DOM is always expensive and on mobile, it’s going to cost an arm and a leg.</p>
+
+<p><img src="http://content.screencast.com/users/JReading/folders/Jing/media/9409fc16-7f32-4f7c-ad10-33fa637703b2/00000067.png" alt="Alt text" /></p>
+
+<p>This is a good example of optimizing code in general for performance.</p>
+
+<h2>Chrome Timeline Panel</h2>
+
+<p>A great <a href="http://gent.ilcore.com/2012/04/optimizing-with-timeline-panel.html">post</a> on debugging optimizations popped up recently and it’s definitely something to do on your sites now. Just know that whatever you see there in Chrome is probably amplified by a hundred on mobile devices.</p>
+
+<h2>Conclusion</h2>
+
+<p>Optimizing for performance is important regardless of the final client’s processing power, but it’s so much more important for a responsive design site. Piling on more and more JavaScript seems misguided and we should keep that in mind when trying to future-proof sites. I’d love to see how these tests stack up on other devices, so if you have web access on your toaster; please run them!</p>
 </div>
 
 
@@ -113,12 +160,12 @@
   
 
 
-<time datetime="2012-04-23T12:59:00-04:00" pubdate data-updated="true">Apr 23<span>rd</span>, 2012</time>
+<time datetime="2012-04-25T13:17:00-04:00" pubdate data-updated="true">Apr 25<span>th</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/classes/'>classes</a>, <a class='category' href='/blog/categories/es6/'>es6</a>, <a class='category' href='/blog/categories/tc39/'>tc39</a>
+    <a class='category' href='/blog/categories/js/'>js</a>, <a class='category' href='/blog/categories/rwd/'>rwd</a>
   
 </span>
 
@@ -127,7 +174,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://HelloWurld.heroku.com/blog/2012/04/23/js-classes-aint-dead-yet/" data-via="JohnnyReading" data-counturl="http://HelloWurld.heroku.com/blog/2012/04/23/js-classes-aint-dead-yet/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://HelloWurld.heroku.com/blog/2012/04/25/the-importance-of-optimizing-javascript-for-responsive-design/" data-via="JohnnyReading" data-counturl="http://HelloWurld.heroku.com/blog/2012/04/25/the-importance-of-optimizing-javascript-for-responsive-design/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -138,10 +185,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/04/19/responsive-modules/" title="Previous Post: Responsive Modules">&laquo; Responsive Modules</a>
+        <a class="basic-alignment left" href="/blog/2012/04/23/js-classes-aint-dead-yet/" title="Previous Post: JS Classes ain't dead yet">&laquo; JS Classes ain't dead yet</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/04/25/the-importance-of-optimizing-javascript-for-responsive-design/" title="Next Post: The Importance of Optimizing JavaScript for Responsive Design">The Importance of Optimizing JavaScript for Responsive Design &raquo;</a>
       
     </p>
   </footer>
@@ -259,8 +304,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://HelloWurld.heroku.com/blog/2012/04/23/js-classes-aint-dead-yet/';
-        var disqus_url = 'http://HelloWurld.heroku.com/blog/2012/04/23/js-classes-aint-dead-yet/';
+        var disqus_identifier = 'http://HelloWurld.heroku.com/blog/2012/04/25/the-importance-of-optimizing-javascript-for-responsive-design/';
+        var disqus_url = 'http://HelloWurld.heroku.com/blog/2012/04/25/the-importance-of-optimizing-javascript-for-responsive-design/';
         var disqus_script = 'embed.js';
       
     (function () {
