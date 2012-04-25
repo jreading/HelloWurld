@@ -41,7 +41,7 @@ Optimization zealots' favorite pariah ([and rightfully so](http://jsperf.com/jqu
 
 ![Alt text](http://content.screencast.com/users/JReading/folders/Jing/media/509a5f42-73b7-4d48-a213-ebc33a712c63/00000066.png)
 
-2000 op/sec is ghastly, but how many items are you appending really? In a client-side MVC, it could get into the hundreds. It's all cumulative after all...
+2000 ops/sec is ghastly, but how many items are you appending really? In a client-side MVC, it could get into the hundreds. It's all cumulative after all...
 
 [DOM access](http://jsperf.com/optimising-dom-access)
 --

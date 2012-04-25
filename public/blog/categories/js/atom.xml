@@ -4,7 +4,7 @@
   <title><![CDATA[Category: js | HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/js/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-04-25T16:10:28-04:00</updated>
+  <updated>2012-04-25T16:15:42-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -53,7 +53,7 @@
 
 <p><img src="http://content.screencast.com/users/JReading/folders/Jing/media/509a5f42-73b7-4d48-a213-ebc33a712c63/00000066.png" alt="Alt text" /></p>
 
-<p>2000 op/sec is ghastly, but how many items are you appending really? In a client-side MVC, it could get into the hundreds. It's all cumulative after all...</p>
+<p>2000 ops/sec is ghastly, but how many items are you appending really? In a client-side MVC, it could get into the hundreds. It's all cumulative after all...</p>
 
 <h2><a href="http://jsperf.com/optimising-dom-access">DOM access</a></h2>
 
