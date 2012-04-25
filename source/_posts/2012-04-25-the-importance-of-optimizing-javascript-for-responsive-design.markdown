@@ -12,7 +12,7 @@ I’m not a micro-optimization troll (there’s plenty of that out there), but i
 
 So let’s take a look…
 <!-- more -->
-One of my favorite talks from JsConf 2012 was [JDalton’s](https://twitter.com/#!/jdalton) “The Hidden Cost of Javascript Natives.” While admitting that some stuff was getting into unnecessary micro-optimization, he showed test that  were quite interesting. 
+One of my favorite talks from JsConf 2012 was [JDalton’s](https://twitter.com/#!/jdalton) “The Hidden Cost of Javascript Natives.” While admitting that some stuff was getting into unnecessary micro-optimization, he showed tests that  were quite interesting. 
 
 I thought I would look at some of these things from a mobile/RWD perspective. It’s important to remember that I’m not really looking at how the tests perform against each other, but how the devices perform against Chrome, Firefox and Safari. Often, there’s not going to be an appreciable difference for most things, but these tests illustrate that Mobile Safari isn’t going to process js as fast as Chrome 18 (no kidding, right).
 
