@@ -37,7 +37,7 @@ The staple of any responsive images implementation performs horribly. Interestin
 [jQuery Prepend/Append](http://jsperf.com/prepend-append)
 --
 
-Optimization zealot’s favorite pariah ([and rightfully so](http://jsperf.com/jquery-vs-native-appendchild)), this is a biggie on mobile.
+Optimization zealots' favorite pariah ([and rightfully so](http://jsperf.com/jquery-vs-native-appendchild)), this is a biggie on mobile.
 
 ![Alt text](http://content.screencast.com/users/JReading/folders/Jing/media/509a5f42-73b7-4d48-a213-ebc33a712c63/00000066.png)
 

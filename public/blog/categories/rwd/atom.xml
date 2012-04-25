@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rwd | HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/rwd/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-04-25T13:49:26-04:00</updated>
+  <updated>2012-04-25T15:27:48-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -49,7 +49,7 @@
 
 <h2><a href="http://jsperf.com/prepend-append">jQuery Prepend/Append</a></h2>
 
-<p>Optimization zealot’s favorite pariah (<a href="http://jsperf.com/jquery-vs-native-appendchild">and rightfully so</a>), this is a biggie on mobile.</p>
+<p>Optimization zealots' favorite pariah (<a href="http://jsperf.com/jquery-vs-native-appendchild">and rightfully so</a>), this is a biggie on mobile.</p>
 
 <p><img src="http://content.screencast.com/users/JReading/folders/Jing/media/509a5f42-73b7-4d48-a213-ebc33a712c63/00000066.png" alt="Alt text" /></p>
 
