@@ -4,7 +4,7 @@
   <title><![CDATA[HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-04-25T15:27:48-04:00</updated>
+  <updated>2012-04-25T16:10:28-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -41,7 +41,7 @@
 
 <h2><a href="http://jsperf.com/jquery-data-vs-html-data-reading/3">Data Attributes</a></h2>
 
-<p>The staple of any responsive images implementation performs horribly. Interesting that only mobile Safari and Webkit prefer the native dataset implementation.</p>
+<p>The staple of any responsive images implementation performs horribly. Interesting that only the Safaris prefer the native dataset implementation.</p>
 
 <p><img src="http://content.screencast.com/users/JReading/folders/Jing/media/73c69e5f-6184-4ee6-ba25-0d8449b8fda5/00000064.png" alt="Alt text" /></p>
 

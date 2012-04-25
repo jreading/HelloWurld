@@ -28,7 +28,7 @@ It’s amazing how poorly some devices perform. I’m not saying that Modernzr i
 [Data Attributes](http://jsperf.com/jquery-data-vs-html-data-reading/3)
 --
 
-The staple of any responsive images implementation performs horribly. Interesting that only mobile Safari and Webkit prefer the native dataset implementation.
+The staple of any responsive images implementation performs horribly. Interesting that only the Safaris prefer the native dataset implementation.
 
 ![Alt text](http://content.screencast.com/users/JReading/folders/Jing/media/73c69e5f-6184-4ee6-ba25-0d8449b8fda5/00000064.png)
 
