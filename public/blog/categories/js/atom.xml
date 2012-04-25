@@ -4,7 +4,7 @@
   <title><![CDATA[Category: js | HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/js/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-04-25T13:47:21-04:00</updated>
+  <updated>2012-04-25T13:49:26-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -27,7 +27,7 @@
 <!-- more -->
 
 
-<p>One of my favorite talks from JsConf 2012 was <a href="https://twitter.com/#!/jdalton">JDalton’s</a> “The Hidden Cost of Javascript Natives.” While admitting that some stuff was getting into unnecessary micro-optimization, he showed test that  were quite interesting.</p>
+<p>One of my favorite talks from JsConf 2012 was <a href="https://twitter.com/#!/jdalton">JDalton’s</a> “The Hidden Cost of Javascript Natives.” While admitting that some stuff was getting into unnecessary micro-optimization, he showed tests that  were quite interesting.</p>
 
 <p>I thought I would look at some of these things from a mobile/RWD perspective. It’s important to remember that I’m not really looking at how the tests perform against each other, but how the devices perform against Chrome, Firefox and Safari. Often, there’s not going to be an appreciable difference for most things, but these tests illustrate that Mobile Safari isn’t going to process js as fast as Chrome 18 (no kidding, right).</p>
 
