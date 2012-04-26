@@ -1,4 +1,0 @@
-HelloWurld
-==========
-
-My Octopress Blog
