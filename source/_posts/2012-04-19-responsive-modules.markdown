@@ -5,6 +5,8 @@ date: 2012-04-19 09:25
 comments: true
 categories: [js, rwd, amd] 
 ---
+**Update**: Refactored to remove namespacing. 
+
 A lot has been said about Responsive Design lately. It’s primary a design movement, but the real problem it tries to solve is making content “[flow like water]( http://www.slideshare.net/yiibu/reset-the-web).” To me it’s not about media queries, or 100% image widths, it’s about: one url, one codebase, and future-proofing new capabilities to maximize user experience.
 
 Therefore, I give you: **Responsive Modules**.
@@ -19,8 +21,8 @@ Enough chatter, the code...
 Here's a carousel widget written in jQuery:
  
 {% codeblock carousel.js lang:js %}
-define([],function() {
-	namespace.Carousel = namespace.Class.extend({
+define([Class],function(Class) {
+	var Carousel = Class.extend({
 		options: {
 			//options here
 		},
@@ -48,6 +50,8 @@ define([],function() {
 			this.element.css({'left': this.intPos});
 		}
 	});
+
+	return Carousel;
 }
 {% endcodeblock %}
 
@@ -60,8 +64,8 @@ So, we write another module for touch devices that includes the same methods for
 AMD gives us a better way:
 
 {% codeblock carousel.touch.js lang:js %}
-define(['carousel'],function() {
-	namespace.Carousel = namespace.Carousel.extend({
+define(['carousel'],function(Carousel) {
+	var Carousel = Carousel.extend({
 		attachEvents: function() {
 			this.element.on('touchstart',$.proxy(function(e){
 				this.startPos = e.originalEvent.touches[0].pageX;
@@ -77,6 +81,8 @@ define(['carousel'],function() {
 			},this));
 		},
 	});
+
+	return Carousel;
 }
 {% endcodeblock %}
 

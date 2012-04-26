@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rwd | HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/rwd/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-04-25T16:15:42-04:00</updated>
+  <updated>2012-04-26T19:46:41-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -78,7 +78,9 @@
     <link href="http://HelloWurld.heroku.com/blog/2012/04/19/responsive-modules/"/>
     <updated>2012-04-19T09:25:00-04:00</updated>
     <id>http://HelloWurld.heroku.com/blog/2012/04/19/responsive-modules</id>
-    <content type="html"><![CDATA[<p>A lot has been said about Responsive Design lately. It’s primary a design movement, but the real problem it tries to solve is making content “<a href="http://www.slideshare.net/yiibu/reset-the-web">flow like water</a>.” To me it’s not about media queries, or 100% image widths, it’s about: one url, one codebase, and future-proofing new capabilities to maximize user experience.</p>
+    <content type="html"><![CDATA[<p><strong>Update</strong>: Refactored to remove namespacing.</p>
+
+<p>A lot has been said about Responsive Design lately. It’s primary a design movement, but the real problem it tries to solve is making content “<a href="http://www.slideshare.net/yiibu/reset-the-web">flow like water</a>.” To me it’s not about media queries, or 100% image widths, it’s about: one url, one codebase, and future-proofing new capabilities to maximize user experience.</p>
 
 <p>Therefore, I give you: <strong>Responsive Modules</strong>.</p>
 
@@ -127,9 +129,11 @@
 <span class='line-number'>31</span>
 <span class='line-number'>32</span>
 <span class='line-number'>33</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">define</span><span class="p">([],</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">define</span><span class="p">([</span><span class="nx">Class</span><span class="p">],</span><span class="kd">function</span><span class="p">(</span><span class="nx">Class</span><span class="p">)</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">namespace</span><span class="p">.</span><span class="nx">Carousel</span> <span class="o">=</span> <span class="nx">namespace</span><span class="p">.</span><span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="kd">var</span> <span class="nx">Carousel</span> <span class="o">=</span> <span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
 </span><span class='line'>    <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
 </span><span class='line'>        <span class="c1">//options here</span>
 </span><span class='line'>    <span class="p">},</span>
@@ -157,6 +161,8 @@
 </span><span class='line'>        <span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">css</span><span class="p">({</span><span class="s1">&#39;left&#39;</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">intPos</span><span class="p">});</span>
 </span><span class='line'>    <span class="p">}</span>
 </span><span class='line'><span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">return</span> <span class="nx">Carousel</span><span class="p">;</span>
 </span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">}</span>
@@ -192,9 +198,11 @@
 <span class='line-number'>19</span>
 <span class='line-number'>20</span>
 <span class='line-number'>21</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">define</span><span class="p">([</span><span class="s1">&#39;carousel&#39;</span><span class="p">],</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">define</span><span class="p">([</span><span class="s1">&#39;carousel&#39;</span><span class="p">],</span><span class="kd">function</span><span class="p">(</span><span class="nx">Carousel</span><span class="p">)</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">namespace</span><span class="p">.</span><span class="nx">Carousel</span> <span class="o">=</span> <span class="nx">namespace</span><span class="p">.</span><span class="nx">Carousel</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="kd">var</span> <span class="nx">Carousel</span> <span class="o">=</span> <span class="nx">Carousel</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
 </span><span class='line'>    <span class="nx">attachEvents</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 </span><span class='line'>        <span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;touchstart&#39;</span><span class="p">,</span><span class="nx">$</span><span class="p">.</span><span class="nx">proxy</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
 </span><span class='line'>            <span class="k">this</span><span class="p">.</span><span class="nx">startPos</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">originalEvent</span><span class="p">.</span><span class="nx">touches</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">pageX</span><span class="p">;</span>
@@ -210,6 +218,8 @@
 </span><span class='line'>        <span class="p">},</span><span class="k">this</span><span class="p">));</span>
 </span><span class='line'>    <span class="p">},</span>
 </span><span class='line'><span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">return</span> <span class="nx">Carousel</span><span class="p">;</span>
 </span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">}</span>
