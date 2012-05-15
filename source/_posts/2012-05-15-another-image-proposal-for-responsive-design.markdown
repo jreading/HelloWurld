@@ -6,6 +6,7 @@ comments: true
 categories: [rwd, images, whatwg, w3c] 
 ---
 
+UPDATE: using valid attributes that aren't obsolete. Github polyfill coming.
 
 There are a few ideas floating around now to deal with images and media queries. There are 
 all [mostly](http://www.w3.org/community/respimg/2012/05/13/an-alternative-proposition-to-and-srcset-with-wider-scope/) [inefficient](https://github.com/Wilto/respimg) [ideas](https://gist.github.com/2701939), so I'm throwing my hat in the ring.
@@ -27,16 +28,16 @@ What about other valid attributes we can add to that:
 
 {% codeblock lang:html %}
 <link
-	rev="alternate"
+	rel="media"
 	media="screen and (max-device-width: 480px)"
-	target="low">
+	type="low">
 {% endcodeblock %}
 
-The attribute `rev` associates a relationship away from that tag. It's the opposite of `rel`, meaning; the document is an extension of this tag in the case of the `media` attribute passing.
+The attribute `rel` associates a relationship to that tag and is valid. `media` is a new value.
 
-`target` is used now for `_top, _blank, _self, or FRAMENAME`. These properties are not best practices anymore, so let's reuse them. 
+the `type` attribute is also valid, but the value is not implemented. 
 
-This technique uses existing valid attributes and sets the `target` attribute to "low". This can be used in `img` elements as such:
+This can be used in `img` elements as such:
 
 {% codeblock lang:html %}
 <img src="myimage.jpg" lowsrc="myimage-phone.jpg">
@@ -52,12 +53,11 @@ With a path in the href attribute, maybe we can do this:
 
 {% codeblock lang:html %}
 <link
-	rev="alternate"
+	rel="media"
 	href="/phone-images/"
 	media="screen and (max-device-width: 480px)"
-	target="low">
+	type="low">
 <img src="myimage.jpg" lowsrc="myimage.jpg"> // `lowsrc` resolves to '/phone-images/myimage.jpg' 
 {% endcodeblock %}
 
-I believe that this method gives the greatest control, smallest footprint, provides backward compatibillity and the smoothest path to adoption of any techniques that have made the rounds lately. Thoughts?
-
+I believe that this method gives the greatest control, smallest footprint, provides backward compatibillity and the smoothest path to adoption of any techniques that have made the rounds lately. The picture element is just too much verbosity and I can't imagine what a page with 20 images would look like. The srcset syntax is a joke and not leveraging media queries at all. Thoughts?

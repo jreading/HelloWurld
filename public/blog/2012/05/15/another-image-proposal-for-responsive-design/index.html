@@ -9,8 +9,7 @@
   <meta name="author" content="J.Reading">
 
   
-  <meta name="description" content="There are a few ideas floating around now to deal with images and media queries. There are
-all mostly inefficient ideas, so I&#8217;m throwing my hat &hellip;">
+  <meta name="description" content="UPDATE: using valid attributes that aren&#8217;t obsolete. Github polyfill coming. There are a few ideas floating around now to deal with images and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -87,7 +86,9 @@ all mostly inefficient ideas, so I&#8217;m throwing my hat &hellip;">
   </header>
 
 
-<div class="entry-content"><p>There are a few ideas floating around now to deal with images and media queries. There are
+<div class="entry-content"><p>UPDATE: using valid attributes that aren&#8217;t obsolete. Github polyfill coming.</p>
+
+<p>There are a few ideas floating around now to deal with images and media queries. There are
 all <a href="http://www.w3.org/community/respimg/2012/05/13/an-alternative-proposition-to-and-srcset-with-wider-scope/">mostly</a> <a href="https://github.com/Wilto/respimg">inefficient</a> <a href="https://gist.github.com/2701939">ideas</a>, so I&#8217;m throwing my hat in the ring.</p>
 
 <!-- more -->
@@ -115,17 +116,17 @@ all <a href="http://www.w3.org/community/respimg/2012/05/13/an-alternative-propo
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span>
-</span><span class='line'>  <span class="na">rev=</span><span class="s">&quot;alternate&quot;</span>
+</span><span class='line'>  <span class="na">rel=</span><span class="s">&quot;media&quot;</span>
 </span><span class='line'>  <span class="na">media=</span><span class="s">&quot;screen and (max-device-width: 480px)&quot;</span>
-</span><span class='line'>  <span class="na">target=</span><span class="s">&quot;low&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="na">type=</span><span class="s">&quot;low&quot;</span><span class="nt">&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>The attribute <code>rev</code> associates a relationship away from that tag. It&#8217;s the opposite of <code>rel</code>, meaning; the document is an extension of this tag in the case of the <code>media</code> attribute passing.</p>
+<p>The attribute <code>rel</code> associates a relationship to that tag and is valid. <code>media</code> is a new value.</p>
 
-<p><code>target</code> is used now for <code>_top, _blank, _self, or FRAMENAME</code>. These properties are not best practices anymore, so let&#8217;s reuse them.</p>
+<p>the <code>type</code> attribute is also valid, but the value is not implemented.</p>
 
-<p>This technique uses existing valid attributes and sets the <code>target</code> attribute to &#8220;low&#8221;. This can be used in <code>img</code> elements as such:</p>
+<p>This can be used in <code>img</code> elements as such:</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;myimage.jpg&quot;</span> <span class="na">lowsrc=</span><span class="s">&quot;myimage-phone.jpg&quot;</span><span class="nt">&gt;</span>
@@ -148,15 +149,15 @@ all <a href="http://www.w3.org/community/respimg/2012/05/13/an-alternative-propo
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span>
-</span><span class='line'>  <span class="na">rev=</span><span class="s">&quot;alternate&quot;</span>
+</span><span class='line'>  <span class="na">rel=</span><span class="s">&quot;media&quot;</span>
 </span><span class='line'>  <span class="na">href=</span><span class="s">&quot;/phone-images/&quot;</span>
 </span><span class='line'>  <span class="na">media=</span><span class="s">&quot;screen and (max-device-width: 480px)&quot;</span>
-</span><span class='line'>  <span class="na">target=</span><span class="s">&quot;low&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="na">type=</span><span class="s">&quot;low&quot;</span><span class="nt">&gt;</span>
 </span><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;myimage.jpg&quot;</span> <span class="na">lowsrc=</span><span class="s">&quot;myimage.jpg&quot;</span><span class="nt">&gt;</span> // `lowsrc` resolves to &#39;/phone-images/myimage.jpg&#39;
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>I believe that this method gives the greatest control, smallest footprint, provides backward compatibillity and the smoothest path to adoption of any techniques that have made the rounds lately. Thoughts?</p>
+<p>I believe that this method gives the greatest control, smallest footprint, provides backward compatibillity and the smoothest path to adoption of any techniques that have made the rounds lately. The picture element is just too much verbosity and I can&#8217;t imagine what a page with 20 images would look like. The srcset syntax is a joke and not leveraging media queries at all. Thoughts?</p>
 </div>
 
 
