@@ -33,7 +33,7 @@ What about other valid attributes we can add to that:
 	type="low">
 {% endcodeblock %}
 
-The attribute `rel` associates a relationship to that tag and is valid. `media` is a new value.
+The attribute `rel` associates a relationship to that mediaquery and is valid. `media` is a new value.
 
 the `type` attribute is also valid, but the value is not implemented. 
 
