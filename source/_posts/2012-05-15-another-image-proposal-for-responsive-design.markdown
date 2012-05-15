@@ -28,7 +28,6 @@ What about other valid attributes we can add to that:
 {% codeblock lang:html %}
 <link
 	rev="alternate"
-	href="#"
 	media="screen and (max-device-width: 480px)"
 	target="low">
 {% endcodeblock %}

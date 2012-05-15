@@ -4,7 +4,7 @@
   <title><![CDATA[HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-05-15T11:35:09-04:00</updated>
+  <updated>2012-05-15T12:16:06-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -45,10 +45,8 @@ all <a href="http://www.w3.org/community/respimg/2012/05/13/an-alternative-propo
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-<span class='line-number'>5</span>
 </pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span>
 </span><span class='line'>  <span class="na">rev=</span><span class="s">&quot;alternate&quot;</span>
-</span><span class='line'>  <span class="na">href=</span><span class="s">&quot;#&quot;</span>
 </span><span class='line'>  <span class="na">media=</span><span class="s">&quot;screen and (max-device-width: 480px)&quot;</span>
 </span><span class='line'>  <span class="na">target=</span><span class="s">&quot;low&quot;</span><span class="nt">&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
