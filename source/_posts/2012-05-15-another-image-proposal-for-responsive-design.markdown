@@ -51,7 +51,7 @@ This technique uses existing valid attributes and sets the `target` attribute to
 
 With a path in the href attribute, maybe we can do this:
 
-{% codeblock lang:html %} 
+{% codeblock lang:html %}
 <link
 	rev="alternate"
 	href="/phone-images/"
