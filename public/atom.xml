@@ -4,7 +4,7 @@
   <title><![CDATA[HelloWurld]]></title>
   <link href="http://HelloWurld.heroku.com/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2012-04-26T19:46:41-04:00</updated>
+  <updated>2012-05-15T11:28:34-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -12,6 +12,88 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Another image proposal for responsive design]]></title>
+    <link href="http://HelloWurld.heroku.com/blog/2012/05/15/another-image-proposal-for-responsive-design/"/>
+    <updated>2012-05-15T10:17:00-04:00</updated>
+    <id>http://HelloWurld.heroku.com/blog/2012/05/15/another-image-proposal-for-responsive-design</id>
+    <content type="html"><![CDATA[<p>There are a few ideas floating around now to deal with images and media queries. There are
+all <a href="http://www.w3.org/community/respimg/2012/05/13/an-alternative-proposition-to-and-srcset-with-wider-scope/">mostly</a> <a href="https://github.com/Wilto/respimg">inefficient</a> <a href="https://gist.github.com/2701939">ideas</a>, so I&#8217;m throwing my hat in the ring.</p>
+
+<!-- more -->
+
+
+<p>The <code>picture</code> element solution adds too much markup. The whatwg proposal is just ugly as heck and doesn&#8217;t leverage any existing valid attributes. The meta tag/mediaquery technique seems close, but I think that can be improved.</p>
+
+<p>Let look at the <code>link</code> element:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span>
+</span><span class='line'>  <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span>
+</span><span class='line'>  <span class="na">href=</span><span class="s">&quot;smartphone.css&quot;</span>
+</span><span class='line'>  <span class="na">media=</span><span class="s">&quot;screen and (max-device-width: 480px)&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What about other valid attributes we can add to that:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span>
+</span><span class='line'>  <span class="na">rev=</span><span class="s">&quot;alternate&quot;</span>
+</span><span class='line'>  <span class="na">href=</span><span class="s">&quot;#&quot;</span>
+</span><span class='line'>  <span class="na">media=</span><span class="s">&quot;screen and (max-device-width: 480px)&quot;</span>
+</span><span class='line'>  <span class="na">target=</span><span class="s">&quot;low&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The attribute <code>rev</code> associates a relationship away from that tag. It&#8217;s the opposite of <code>rel</code>, meaning; the document is an extension of this tag in the case of the <code>media</code> attribute passing.</p>
+
+<p><code>target</code> is used now for <code>_top, _blank, _self, or FRAMENAME</code>. These properties are not best practices anymore, so let&#8217;s reuse them.</p>
+
+<p>This technique uses existing valid attributes and sets the <code>target</code> attribute to &#8220;low&#8221;. This can be used in <code>img</code> elements as such:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;myimage.jpg&quot;</span> <span class="na">lowsrc=</span><span class="s">&quot;myimage-phone.jpg&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>lowsrc</code>, remember that? Why not <code>highsrc</code> or <code>tabletsrc</code> or <code>tvsrc</code>? It would be up to browsers to only pull the correct src based on the alternate link. Browsers look for hooks for alternate now. This also has the benefit or not dealing with paths, unless you need to.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;myimage.jpg&quot;</span> <span class="na">lowsrc=</span><span class="s">&quot;&quot;</span> <span class="na">tvsrc=</span><span class="s">&quot;tvimage.jpg&quot;</span> <span class="na">highsrc=</span><span class="s">&quot;http://cdn.bigimages.org/myimage.jpg&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>With a path in the href attribute, maybe we can do this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'><span class="nt">&lt;link</span>
+</span><span class='line'>  <span class="na">rev=</span><span class="s">&quot;alternate&quot;</span>
+</span><span class='line'>  <span class="na">href=</span><span class="s">&quot;/phone-images/&quot;</span>
+</span><span class='line'>  <span class="na">media=</span><span class="s">&quot;screen and (max-device-width: 480px)&quot;</span>
+</span><span class='line'>  <span class="na">target=</span><span class="s">&quot;low&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;myimage.jpg&quot;</span> <span class="na">lowsrc=</span><span class="s">&quot;myimage.jpg&quot;</span><span class="nt">&gt;</span> // `lowsrc` resolves to &#39;/phone-images/myimage.jpg&#39;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I believe that this method gives the greatest control, smallest footprint, provides backward compatibillity and the smoothest path to adoption of any techniques that have made the rounds lately. Thoughts?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Importance of Optimizing JavaScript for Responsive Design]]></title>

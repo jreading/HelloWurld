@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Another image proposal for responsive design - HelloWurld</title>
+  <meta name="author" content="J.Reading">
+
+  
+  <meta name="description" content="There are a few ideas floating around now to deal with images and media queries. There are
+all mostly inefficient ideas, so I&#8217;m throwing my hat &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://HelloWurld.heroku.com/blog/2012/05/15/another-image-proposal-for-responsive-design">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="HelloWurld" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Gudea' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">HelloWurld</a></h1>
+  
+    <h2>-webkit prefix enabled.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:HelloWurld.heroku.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">⎋</a></li>
+  <li><a href="/blog/archives">☰</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Another Image Proposal for Responsive Design</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-15T10:17:00-04:00" pubdate data-updated="true">May 15<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>There are a few ideas floating around now to deal with images and media queries. There are
+all <a href="http://www.w3.org/community/respimg/2012/05/13/an-alternative-proposition-to-and-srcset-with-wider-scope/">mostly</a> <a href="https://github.com/Wilto/respimg">inefficient</a> <a href="https://gist.github.com/2701939">ideas</a>, so I&#8217;m throwing my hat in the ring.</p>
+
+<!-- more -->
+
+
+<p>The <code>picture</code> element solution adds too much markup. The whatwg proposal is just ugly as heck and doesn&#8217;t leverage any existing valid attributes. The meta tag/mediaquery technique seems close, but I think that can be improved.</p>
+
+<p>Let look at the <code>link</code> element:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span>
+</span><span class='line'>  <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span>
+</span><span class='line'>  <span class="na">href=</span><span class="s">&quot;smartphone.css&quot;</span>
+</span><span class='line'>  <span class="na">media=</span><span class="s">&quot;screen and (max-device-width: 480px)&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What about other valid attributes we can add to that:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span>
+</span><span class='line'>  <span class="na">rev=</span><span class="s">&quot;alternate&quot;</span>
+</span><span class='line'>  <span class="na">href=</span><span class="s">&quot;#&quot;</span>
+</span><span class='line'>  <span class="na">media=</span><span class="s">&quot;screen and (max-device-width: 480px)&quot;</span>
+</span><span class='line'>  <span class="na">target=</span><span class="s">&quot;low&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The attribute <code>rev</code> associates a relationship away from that tag. It&#8217;s the opposite of <code>rel</code>, meaning; the document is an extension of this tag in the case of the <code>media</code> attribute passing.</p>
+
+<p><code>target</code> is used now for <code>_top, _blank, _self, or FRAMENAME</code>. These properties are not best practices anymore, so let&#8217;s reuse them.</p>
+
+<p>This technique uses existing valid attributes and sets the <code>target</code> attribute to &#8220;low&#8221;. This can be used in <code>img</code> elements as such:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;myimage.jpg&quot;</span> <span class="na">lowsrc=</span><span class="s">&quot;myimage-phone.jpg&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>lowsrc</code>, remember that? Why not <code>highsrc</code> or <code>tabletsrc</code> or <code>tvsrc</code>? It would be up to browsers to only pull the correct src based on the alternate link. Browsers look for hooks for alternate now. This also has the benefit or not dealing with paths, unless you need to.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;myimage.jpg&quot;</span> <span class="na">lowsrc=</span><span class="s">&quot;&quot;</span> <span class="na">tvsrc=</span><span class="s">&quot;tvimage.jpg&quot;</span> <span class="na">highsrc=</span><span class="s">&quot;http://cdn.bigimages.org/myimage.jpg&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>With a path in the href attribute, maybe we can do this:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>
+</span><span class='line'><span class="nt">&lt;link</span>
+</span><span class='line'>  <span class="na">rev=</span><span class="s">&quot;alternate&quot;</span>
+</span><span class='line'>  <span class="na">href=</span><span class="s">&quot;/phone-images/&quot;</span>
+</span><span class='line'>  <span class="na">media=</span><span class="s">&quot;screen and (max-device-width: 480px)&quot;</span>
+</span><span class='line'>  <span class="na">target=</span><span class="s">&quot;low&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;myimage.jpg&quot;</span> <span class="na">lowsrc=</span><span class="s">&quot;myimage.jpg&quot;</span><span class="nt">&gt;</span> // `lowsrc` resolves to &#39;/phone-images/myimage.jpg&#39;
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I believe that this method gives the greatest control, smallest footprint, provides backward compatibillity and the smoothest path to adoption of any techniques that have made the rounds lately. Thoughts?</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">J.Reading</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-15T10:17:00-04:00" pubdate data-updated="true">May 15<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/images/'>images</a>, <a class='category' href='/blog/categories/rwd/'>rwd</a>, <a class='category' href='/blog/categories/w3c/'>w3c</a>, <a class='category' href='/blog/categories/whatwg/'>whatwg</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://HelloWurld.heroku.com/blog/2012/05/15/another-image-proposal-for-responsive-design/" data-via="JohnnyReading" data-counturl="http://HelloWurld.heroku.com/blog/2012/05/15/another-image-proposal-for-responsive-design/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/04/25/the-importance-of-optimizing-javascript-for-responsive-design/" title="Previous Post: The Importance of Optimizing JavaScript for Responsive Design">&laquo; The Importance of Optimizing JavaScript for Responsive Design</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>John Reading</h1>
+  That's me. Lead UI at <a href="http://icrossing.com/">iCrossing.com</a>. Fulltime father, jS'er, craft beer enthuiast, weekend warrior.
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("JohnnyReading", 5, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/JohnnyReading" class="twitter-follow-button" data-show-count="false">Follow @JohnnyReading</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/jreading">@jreading</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jreading',
+            count: 4,
+            skip_forks: false,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/05/15/another-image-proposal-for-responsive-design/">Another image proposal for responsive design</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/25/the-importance-of-optimizing-javascript-for-responsive-design/">The Importance of Optimizing JavaScript for Responsive Design</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/23/js-classes-aint-dead-yet/">JS Classes ain't dead yet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/19/responsive-modules/">Responsive Modules</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/17/very-important-matters/">Very Important Matters</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+<section>
+	<a href="http://jsconf.eu/2011/an_end_to_negativity.html"><img alt="js.png" src="/images/javascript_logo.png" width="50" height="50"></a>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - J.Reading -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'hellowurld';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://HelloWurld.heroku.com/blog/2012/05/15/another-image-proposal-for-responsive-design/';
+        var disqus_url = 'http://HelloWurld.heroku.com/blog/2012/05/15/another-image-proposal-for-responsive-design/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30261710-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+</html>
