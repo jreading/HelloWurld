@@ -6,8 +6,6 @@ comments: true
 categories: [rwd, images, whatwg, w3c] 
 ---
 
-UPDATE: using valid attributes that aren't obsolete. Github polyfill coming.
-
 There are a few ideas floating around now to deal with images and media queries. There are 
 all [mostly](http://www.w3.org/community/respimg/2012/05/13/an-alternative-proposition-to-and-srcset-with-wider-scope/) [inefficient](https://github.com/Wilto/respimg) [ideas](https://gist.github.com/2701939), so I'm throwing my hat in the ring.
 

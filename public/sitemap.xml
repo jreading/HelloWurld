@@ -32,14 +32,18 @@
         <loc>
             http://HelloWurld.heroku.com/blog/2012/05/15/another-image-proposal-for-responsive-design/
         </loc>
-        <lastmod>2012-05-15T19:49:47-04:00</lastmod>
+        <lastmod>2013-04-25T16:31:35-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://HelloWurld.heroku.com/blog/2013/05/16/this-thing-on-dot-dot-dot/</loc>
+        <lastmod>2013-05-16T18:08:19-04:00</lastmod>
     </url>
     <url>
         <loc>http://HelloWurld.heroku.com/blog/archives/</loc>
-        <lastmod>2012-05-15T19:49:47-04:00</lastmod>
+        <lastmod>2013-05-16T18:08:19-04:00</lastmod>
     </url>
     <url>
         <loc>http://HelloWurld.heroku.com/</loc>
-        <lastmod>2012-05-15T19:49:47-04:00</lastmod>
+        <lastmod>2013-05-16T18:08:19-04:00</lastmod>
     </url>
 </urlset>
