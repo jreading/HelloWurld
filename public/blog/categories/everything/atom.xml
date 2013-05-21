@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: everything | Always On]]></title>
+  <link href="http://HelloWurld.heroku.com/blog/categories/everything/atom.xml" rel="self"/>
+  <link href="http://HelloWurld.heroku.com/"/>
+  <updated>2013-05-21T17:37:02-04:00</updated>
+  <id>http://HelloWurld.heroku.com/</id>
+  <author>
+    <name><![CDATA[J.Reading]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Front-end web development is the most difficult programming job in the world]]></title>
+    <link href="http://HelloWurld.heroku.com/blog/2013/05/25/front-end-web-development-is-the-most-difficult-programming-job-in-the-world/"/>
+    <updated>2013-05-25T16:29:00-04:00</updated>
+    <id>http://HelloWurld.heroku.com/blog/2013/05/25/front-end-web-development-is-the-most-difficult-programming-job-in-the-world</id>
+    <content type="html"><![CDATA[<p>There's so much to being a front-end web developer these days that some stuff is often overlooked. Calling yourself an expert says alot, a whole lot. Guess what? You're probably not one...</p>
+
+<!-- more -->
+
+
+<p>I find myself going back to <a href="http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/">this blog post by Rebebcca Murphey</a> whenever the discussion comes up of hiring and the entry-level requirements for a UI engineer. It's hard to argue with any of those points, but when I ask myself what constitutes an expert; it's a much harder thing to quantify.</p>
+
+<p>The modern web is growing by leaps and bounds lately (seriously, Paul Irish stop turning Chrome into an IDE) and it's hard to keep up some times. Here's a list of the things that engender an expert in front-end these days. Excuse me while I get two fingers of Canadian Club and an aspirin.</p>
+
+<h2>HTML</h2>
+
+<ul>
+<li>Shadow DOM</li>
+</ul>
+
+
+<p>Are you ready to start churning out web components? Are you psyched to see the imminent demise of the iframe? <a href="http://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/">Cool, me too</a>.</p>
+
+<ul>
+<li>AppCache</li>
+</ul>
+
+
+<p>The douchebag is alive and well. <a href="http://blip.tv/jsconf/jsconf2012-jake-archibald-appcache-douchebag-6143723">Better get up to speed in all it's quirks</a>.</p>
+
+<ul>
+<li>Web Storage</li>
+</ul>
+
+
+<p>The days of the legacy Netscape "magic cookie" are behind us. <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/DOM/Storage">Hurray</a>!</p>
+
+<ul>
+<li>WebRTC</li>
+</ul>
+
+
+<p>So, so many cool things are going to come of webRTC. Realtime communication is going to be ubiquitious. <a href="https://webrtc-experiment.appspot.com/">Check out all these demos</a>.</p>
+
+<ul>
+<li>WebGL</li>
+</ul>
+
+
+<p>It's 2013, I shouldn't have to hear "Flash could do that 10 years ago." Thanks <a href="http://learningwebgl.com/blog/">WebGL</a>!</p>
+
+<ul>
+<li>Canvas</li>
+</ul>
+
+
+<p>Like Flash, but without the horrible IDE, proprietary technology and angry letter's from CEO's. I actually think that of all the stuff on this page <a href="http://css-tricks.com/learn-canvas-snake-game/">Canvas</a> is the likeliest to be phased out in the near future.</p>
+
+<ul>
+<li>Semantics</li>
+</ul>
+
+
+<p>Still waiting for a set of hard standards in terms of semantics. Doesn't mean this is extremely important to SEO, internationaliztion and pain, old good form. This is one of those "strong opinions weakly held" moments.</p>
+
+<ul>
+<li>Sockets</li>
+</ul>
+
+
+<p>Sockets are cool.</p>
+
+<h2>JS</h2>
+
+<ul>
+<li>Libraries: Backbone, Angular, et al.</li>
+</ul>
+
+
+<p>You've clearly been under a rock if you don't have one of these under your belt. MV* is a narrow use case on the front-end, but gaining more and more ground (Angular looks to unseat Backbone recently). Take a look at <a href="http://www.polymer-project.org/">Google's Polymer</a> (which is built on web components).</p>
+
+<ul>
+<li>Modules, Require.js</li>
+</ul>
+
+
+<p>Climb out from under there and get on board. <a href="http://corner.squareup.com/2013/02/es6-module-transpiler.html">Js Modules</a> look to be native in ES6.</p>
+
+<ul>
+<li>Promises</li>
+</ul>
+
+
+<p>Again, this is something that will be <a href="http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/">native someday</a> and in jQuery for ages. <a href="https://www.youtube.com/watch?feature=player_detailpage&amp;v=H8Q83DPZy6E#t=30s">Promises, promises</a>.</p>
+
+<ul>
+<li>Strict Mode</li>
+</ul>
+
+
+<p><a href="http://scriptogr.am/micmath/post/should-you-use-strict-in-your-production-javascript">Get used to it</a>. It's going to be a requirement soon enough.</p>
+
+<ul>
+<li>Testing</li>
+</ul>
+
+
+<p>Testing is the new normal. <a href="http://alistapart.com/article/writing-testable-javascript">Another great post by Ms. Murphey</a>.</p>
+
+<ul>
+<li>Node/NPM</li>
+</ul>
+
+
+<p>If I was writing a similar article for backend developers this would be at the top of the list. But for the front-end, it's just not cool to say you can't use the terminal, run <code>npm install</code> and push to a cloud-based repository or production server. <a href="http://net.tutsplus.com/tutorials/javascript-ajax/node-js-for-beginners/">Learn node</a> and don't be a hater. It's just not acceptable and so, so <a href="http://www.youtube.com/watch?v=1e1zzna-dNw">NOT cool</a>.</p>
+
+<ul>
+<li>Patterns</li>
+</ul>
+
+
+<p>Everyone agrees on the best pattern, so I almost didn't include this very <a href="http://shichuan.github.io/javascript-patterns/">thorough list of popular javascript patterns</a>. There's hardly any dissent on the best way to code. ;P</p>
+
+<ul>
+<li>ES6</li>
+</ul>
+
+
+<p><a href="http://tc39wiki.calculist.org/es6/">So much hard work</a> goes into the TC39 committee, if you ever see a member, give them a hug.</p>
+
+<h2>CSS</h2>
+
+<ul>
+<li>Painting Optimization</li>
+</ul>
+
+
+<p>Painting Optimization is the new <code>for</code> loop optimization. <a href="https://developers.google.com/events/io/sessions/325933151">Pay attention</a>.</p>
+
+<ul>
+<li>Scoped stylesheets</li>
+</ul>
+
+
+<p>Another thing to come out of chromium. <a href="http://updates.html5rocks.com/2012/03/A-New-Experimental-Feature-style-scoped">Take a look and learn</a>.</p>
+
+<ul>
+<li>Preprocessors</li>
+</ul>
+
+
+<p>Less, Sass, Stylus, Rework. Personally I hope Less survives it's tortured past. Regardless, <a href="http://blog.teamtreehouse.com/how-to-choose-the-right-css-preprocessor">they're here to stay</a>.</p>
+
+<ul>
+<li><p>Flexible box model</p></li>
+<li><p>Native grids</p></li>
+<li>Fonts</li>
+<li>RWD</li>
+<li>Animations GPU</li>
+<li>Filters, Shaders, Masking, Gradients, Shadows</li>
+<li>@supports</li>
+<li>All the Tricks</li>
+</ul>
+
+
+<h2>Networks &amp; Devices</h2>
+
+<ul>
+<li>Latency</li>
+<li>Capabilites: progressive enhancement</li>
+<li>Mutha f'ing Browser quirks</li>
+</ul>
+
+
+<h2>Services</h2>
+
+<ul>
+<li>Github, bitbucket, heroku, nodejitsu, et al.</li>
+</ul>
+
+
+<h2>Deployment &amp; Build Processes</h2>
+
+<ul>
+<li>Git</li>
+<li>Grunt</li>
+<li>Yeoman</li>
+<li>Bower</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
