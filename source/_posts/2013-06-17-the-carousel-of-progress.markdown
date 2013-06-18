@@ -22,7 +22,7 @@ Are you ready to start churning out web components? Are you psyched to see the i
 
 * 	AppCache
 
-It's alive and well. [Better get up to speed in all it's quirks](http://blip.tv/jsconf/jsconf2012-jake-archibald-appcache-douchebag-6143723).
+It's alive and well. [Better get up to speed in all its quirks](http://blip.tv/jsconf/jsconf2012-jake-archibald-appcache-douchebag-6143723).
 
 *	Web Storage
 
