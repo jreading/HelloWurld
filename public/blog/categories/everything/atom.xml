@@ -4,7 +4,7 @@
   <title><![CDATA[Category: everything | Always On]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/everything/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2013-06-17T21:42:41-04:00</updated>
+  <updated>2013-06-18T09:51:18-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -18,14 +18,14 @@
     <link href="http://HelloWurld.heroku.com/blog/2013/06/17/the-carousel-of-progress/"/>
     <updated>2013-06-17T16:29:00-04:00</updated>
     <id>http://HelloWurld.heroku.com/blog/2013/06/17/the-carousel-of-progress</id>
-    <content type="html"><![CDATA[<p>There's so much to being a front-end web developer these days that some stuff is often overlooked. Calling yourself an expert says alot, a whole lot. Guess what? You're probably not one, but that doesn't matter anyway... Progress marches on and if you're paying attention, you're in for a good ride.</p>
+    <content type="html"><![CDATA[<p>After jsConf this year, I took the family to Disney World (what a guy, right?). One ride that I had never been on before was the <a href="http://en.wikipedia.org/wiki/Walt_Disney's_Carousel_of_Progress">Carousel of Progress</a>; a journey through time that celebrates change. Professionally, I felt like I've been on that ride without being allowed to get off for the last few years.</p>
 
 <!-- more -->
 
 
-<p>I find myself going back to <a href="http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/">this blog post by Rebebcca Murphey</a> whenever the discussion comes up of hiring and the entry-level requirements for a UI engineer. It's hard to argue with any of those points, but when I ask myself what constitutes an expert; it's a much harder thing to quantify.</p>
+<p>Calling yourself an expert these days says alot. You're probably not one, but that doesn't matter anyway... Progress marches on and if you're paying attention, you're in for a good ride.</p>
 
-<p>The modern web is growing by leaps and bounds lately and it's hard to keep up some times, so here's a list of some things that are on the horizon or in the mainstream that were essentially nonexistent a few months  (or weeks) ago.</p>
+<p>The modern web is growing by leaps and bounds lately and it can seem hard to keep up. So, here's a list of some things that are on the horizon or in the mainstream that were essentially nonexistent a few months (or weeks) ago. I have no doubt this list will look completely different by the end of the year. I would expect nothing less.</p>
 
 <h2>HTML/Web APIs</h2>
 

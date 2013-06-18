@@ -5,13 +5,12 @@ date: 2013-06-17 16:29
 comments: true
 categories: [js, css, html, web dev, everything] 
 ---
-
-There's so much to being a front-end web developer these days that some stuff is often overlooked. Calling yourself an expert says alot, a whole lot. Guess what? You're probably not one, but that doesn't matter anyway... Progress marches on and if you're paying attention, you're in for a good ride.
+After jsConf this year, I took the family to Disney World (what a guy, right?). One ride that I had never been on before was the [Carousel of Progress](http://en.wikipedia.org/wiki/Walt_Disney's_Carousel_of_Progress); a journey through time that celebrates change. Professionally, I felt like I've been on that ride without being allowed to get off for the last few years.
 
 <!-- more -->
-I find myself going back to [this blog post by Rebebcca Murphey](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/) whenever the discussion comes up of hiring and the entry-level requirements for a UI engineer. It's hard to argue with any of those points, but when I ask myself what constitutes an expert; it's a much harder thing to quantify.
+Calling yourself an expert these days says alot. You're probably not one, but that doesn't matter anyway... Progress marches on and if you're paying attention, you're in for a good ride.
 
-The modern web is growing by leaps and bounds lately and it's hard to keep up some times, so here's a list of some things that are on the horizon or in the mainstream that were essentially nonexistent a few months  (or weeks) ago.
+The modern web is growing by leaps and bounds lately and it can seem hard to keep up. So, here's a list of some things that are on the horizon or in the mainstream that were essentially nonexistent a few months (or weeks) ago. I have no doubt this list will look completely different by the end of the year. I would expect nothing less.
 
 
 
