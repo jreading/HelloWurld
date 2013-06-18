@@ -4,7 +4,7 @@
   <title><![CDATA[Always On]]></title>
   <link href="http://HelloWurld.heroku.com/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2013-06-17T21:39:52-04:00</updated>
+  <updated>2013-06-17T21:42:41-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Carousel of Progress]]></title>
-    <link href="http://HelloWurld.heroku.com/blog/2013/06/15/the-carousel-of-progress/"/>
-    <updated>2013-06-15T16:29:00-04:00</updated>
-    <id>http://HelloWurld.heroku.com/blog/2013/06/15/the-carousel-of-progress</id>
+    <link href="http://HelloWurld.heroku.com/blog/2013/06/17/the-carousel-of-progress/"/>
+    <updated>2013-06-17T16:29:00-04:00</updated>
+    <id>http://HelloWurld.heroku.com/blog/2013/06/17/the-carousel-of-progress</id>
     <content type="html"><![CDATA[<p>There&#8217;s so much to being a front-end web developer these days that some stuff is often overlooked. Calling yourself an expert says alot, a whole lot. Guess what? You&#8217;re probably not one, but that doesn&#8217;t matter anyway&#8230; Progress marches on and if you&#8217;re paying attention, you&#8217;re in for a good ride.</p>
 
 <!-- more -->
