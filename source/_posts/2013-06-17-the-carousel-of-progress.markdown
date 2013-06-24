@@ -13,7 +13,6 @@ Calling yourself an expert these days says alot. You're probably not one, but th
 The modern web is growing by leaps and bounds lately and it can seem hard to keep up. So, here's a list of some things that are on the horizon or in the mainstream that were essentially nonexistent a few months (or weeks) ago. I have no doubt this list will look completely different by the end of the year. I would expect nothing less.
 
 
-
 HTML/Web APIs
 -
 *	Shadow DOM
@@ -68,7 +67,7 @@ Again, this is something that will be [native someday](http://domenic.me/2012/10
 
 *	Strict Mode
 
-[Get used to it](http://scriptogr.am/micmath/post/should-you-use-strict-in-your-production-javascript). It's going to be a requirement soon enough.
+[Get used to it](http://edanhewitt.com/strict-javascript/). It's going to be a requirement soon enough.
 
 *	Testing
 
@@ -89,6 +88,9 @@ Everyone agrees on the best pattern, so I almost didn't include this very [thoro
 
 CSS
 -
+
+*	UPDATE 6/24/13: [Blend modes in Canary](http://blogs.adobe.com/webplatform/2013/06/24/css-background-blend-modes-are-now-available-in-chrome-canary-and-webkit-nightly/).
+
 *	Painting Optimization
 
 Painting Optimization is the new `for` loop optimization. [Pay attention](https://developers.google.com/events/io/sessions/325933151).

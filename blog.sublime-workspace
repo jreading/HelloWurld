@@ -272,10 +272,10 @@
 	"buffers":
 	[
 		{
-			"file": "source/_posts/2013-05-25-front-end-web-development-is-the-most-difficult-programming-job-in-the-world.markdown",
+			"file": "source/_posts/2013-06-17-the-carousel-of-progress.markdown",
 			"settings":
 			{
-				"buffer_size": 6009,
+				"buffer_size": 7017,
 				"line_ending": "Unix"
 			}
 		}
@@ -424,6 +424,8 @@
 	},
 	"file_history":
 	[
+		"/projects/octopress/_config.yml",
+		"/projects/octopress/source/_posts/2013-06-17-the-carousel-of-progress.markdown",
 		"/projects/M3/13.06.0/www/freemarker/my-marlboro/communication-preferences.ftl",
 		"/projects/M3/13.06.0/_src/css/make-it-a-classic/base.partial.less",
 		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/confirmation.ftl",
@@ -460,7 +462,6 @@
 		"/projects/M3/13.06.0/www/freemarker/team-marlboro/project-hub/home.ftl",
 		"/projects/octopress/source/_posts/2013-05-16-this-thing-on-dot-dot-dot.markdown",
 		"/projects/octopress/source/_posts/2013-04-25-front-end-web-development-is-the-most-difficult-programming-job-in-the-world.markdown",
-		"/projects/octopress/_config.yml",
 		"/projects/RPlusBuildScript/rplusbuild.js",
 		"/projects/RPlusBuildScript/config.json",
 		"/projects/M3/13.06.0/www/freemarker/search/predictive-results.ftl",
@@ -550,8 +551,7 @@
 		"/projects/M3/13.06.0/_src/js/modules/carousel.click.js",
 		"/projects/M3/13.06.0/_src/js/modules/carousel.touch.js",
 		"/projects/M3/ui-release/_src/css/masters-of-meat/base.partial.less",
-		"/projects/M3/ui-release/_src/css/desktop.less",
-		"/projects/M3/ui-release/_src/css/base.partial.less"
+		"/projects/M3/ui-release/_src/css/desktop.less"
 	],
 	"find":
 	{
@@ -632,6 +632,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"it's",
 			"frm",
 			"carousel",
 			"m_site",
@@ -758,8 +759,7 @@
 			"DOI",
 			"m_",
 			"DOI",
-			"DOISt",
-			"selec"
+			"DOISt"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -857,22 +857,23 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/_posts/2013-05-25-front-end-web-development-is-the-most-difficult-programming-job-in-the-world.markdown",
+					"file": "source/_posts/2013-06-17-the-carousel-of-progress.markdown",
 					"settings":
 					{
-						"buffer_size": 6009,
+						"buffer_size": 7017,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5880,
-								5880
+								1348,
+								1348
 							]
 						],
 						"settings":
@@ -932,7 +933,7 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1923.0,
+						"translation.y": 140.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

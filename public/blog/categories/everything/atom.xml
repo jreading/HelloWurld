@@ -4,7 +4,7 @@
   <title><![CDATA[Category: everything | Always On]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/everything/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2013-06-18T11:56:12-04:00</updated>
+  <updated>2013-06-24T16:46:10-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -120,7 +120,7 @@
 </ul>
 
 
-<p><a href="http://scriptogr.am/micmath/post/should-you-use-strict-in-your-production-javascript">Get used to it</a>. It's going to be a requirement soon enough.</p>
+<p><a href="http://edanhewitt.com/strict-javascript/">Get used to it</a>. It's going to be a requirement soon enough.</p>
 
 <ul>
 <li>Testing</li>
@@ -153,7 +153,8 @@
 <h2>CSS</h2>
 
 <ul>
-<li>Painting Optimization</li>
+<li><p>UPDATE 6/24/13: <a href="http://blogs.adobe.com/webplatform/2013/06/24/css-background-blend-modes-are-now-available-in-chrome-canary-and-webkit-nightly/">Blend modes in Canary</a>.</p></li>
+<li><p>Painting Optimization</p></li>
 </ul>
 
 
