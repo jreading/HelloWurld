@@ -124,6 +124,7 @@ $.domReady(function() {
  //getNav();
   addSidebarToggler();
   $('a').each(function(el){
+    console.log($(el).attr('href').indexOf('http'))
     if ($(el).attr('href').indexOf('http') === 0) {
       $(el).attr('target','_blank');
     }

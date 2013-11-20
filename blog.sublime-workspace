@@ -76,10 +76,17 @@
 	"buffers":
 	[
 		{
+<<<<<<< HEAD
 			"file": "blog.sublime-project",
 			"settings":
 			{
 				"buffer_size": 63,
+=======
+			"file": "source/_posts/2013-06-17-the-carousel-of-progress.markdown",
+			"settings":
+			{
+				"buffer_size": 7017,
+>>>>>>> 975cadc98a49b1bb16b5d5820bc8110c8de31ff1
 				"line_ending": "Unix"
 			}
 		}
@@ -164,6 +171,7 @@
 	},
 	"file_history":
 	[
+<<<<<<< HEAD
 		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/lib/angular/angular.min.js",
 		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/package.json",
 		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/build.xml",
@@ -262,6 +270,136 @@
 		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/proofui/war/com.novell.siem.proof.Main/js/angular.min.js",
 		"/Users/jreading/Documents/test.js",
 		"/Users/jreading/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings"
+=======
+		"/projects/octopress/_config.yml",
+		"/projects/octopress/source/_posts/2013-06-17-the-carousel-of-progress.markdown",
+		"/projects/M3/13.06.0/www/freemarker/my-marlboro/communication-preferences.ftl",
+		"/projects/M3/13.06.0/_src/css/make-it-a-classic/base.partial.less",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/confirmation.ftl",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/guidelines.ftl",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/upload-photo.ftl",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/includes/smsform.ftl",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/daily-limit.ftl",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/home.ftl",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/week.ftl",
+		"/projects/M3/13.06.0/_src/css/the-black-book/base.partial.less",
+		"/projects/M3/13.06.0/_src/css/products/base.partial.less",
+		"/projects/M3/13.06.0/_src/css/base.partial.less",
+		"/projects/M3/13.06.0/build.js",
+		"/projects/M3/ui-release/build.js",
+		"/projects/M3/13.06.0/_src/js/altria.js",
+		"/projects/M3/13.06.0/_src/js/modules/carousel.js",
+		"/projects/M3/13.06.0/www/freemarker/the-black-book/blog-detail.ftl",
+		"/projects/M3/13.06.0/_src/css/break-for-flavor/desktop.less",
+		"/projects/M3/13.06.0/www/freemarker/products/gold.ftl",
+		"/projects/M3/13.06.0/_src/css/break-for-flavor/globals.partial.less",
+		"/projects/M3/13.06.0/_src/css/capture-the-unknown/base.partial.less",
+		"/projects/M3/13.06.0/www/freemarker/capture-the-unknown/share-a-photo/guidelines.ftl",
+		"/projects/M3/13.06.0/_src/css/break-for-flavor/base.partial.less",
+		"/projects/M3/13.06.0/www/freemarker/break-for-flavor/blog-list.ftl",
+		"/projects/M3/13.06.0/www/freemarker/the-black-book/blog-list.ftl",
+		"/projects/M3/13.06.0/www/freemarker/break-for-flavor/home.ftl",
+		"/projects/M3/13.06.0/www/freemarker/capture-the-unknown/share-a-photo/home.ftl",
+		"/projects/M3/13.06.0/_src/css/my-marlboro/phone.less",
+		"/projects/M3/13.06.0/www/freemarker/my-marlboro/profile.ftl",
+		"/projects/M3/13.06.0/www/freemarker/capture-the-unknown/share-a-photo/confirmation.ftl",
+		"/projects/M3/13.06.0/www/freemarker/capture-the-unknown/share-a-photo/daily-limit.ftl",
+		"/projects/M3/13.06.0/www/freemarker/the-black-book/home.ftl",
+		"/projects/M3/13.06.0/www/freemarker/ranch/promo.ftl",
+		"/projects/M3/13.06.0/www/freemarker/team-marlboro/project-hub/home.ftl",
+		"/projects/octopress/source/_posts/2013-05-16-this-thing-on-dot-dot-dot.markdown",
+		"/projects/octopress/source/_posts/2013-04-25-front-end-web-development-is-the-most-difficult-programming-job-in-the-world.markdown",
+		"/projects/RPlusBuildScript/rplusbuild.js",
+		"/projects/RPlusBuildScript/config.json",
+		"/projects/M3/13.06.0/www/freemarker/search/predictive-results.ftl",
+		"/projects/M3/13.06.0/_src/js/modules/form.js",
+		"/projects/M3/13.06.0/www/freemarker/flavor-makers/flavor-maker.ftl",
+		"/projects/M3/13.06.0/www/js/modules/form.js",
+		"/projects/M3/13.06.0/www/js/modules/form.thin.js",
+		"/projects/RPlusBuildScript/_src/css/tablet.less",
+		"/projects/RPlusBuildScript/_src/css/smartphone.less",
+		"/projects/M3/13.06.0/package.json",
+		"/projects/M3/13.06.0/config.json",
+		"/projects/RPlusBuildScript/RPlusBuildScript.sublime-project",
+		"/projects/M3/ui-release/package.json",
+		"/projects/M3/ui-release/config.json",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/includes/subnav.ftl",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/choose-category.ftl",
+		"/projects/M3/ui-release/_src/js/altria.js",
+		"/projects/M3/ui-release/www/freemarker/includes/iperceptions.ftl",
+		"/projects/M3/ui-release/www/freemarker/master.ftl",
+		"/projects/jquery-plug/Gruntfile.js",
+		"/projects/M3/13.06.0/_src/js/libs/msgs.js",
+		"/projects/M3/13.06.0/www/freemarker/master.ftl",
+		"/projects/M3/13.06.0/_src/js/mobile.js",
+		"/projects/M3/13.06.0/www/freemarker/flavor-makers/includes/subnav.ftl",
+		"/projects/M3/13.08.0/_src/css/cowboy-up/base.partial.less",
+		"/projects/M3/13.08.0/_src/css/cowboy-up/desktop.less",
+		"/projects/M3/13.08.0/_src/css/cowboy-up/globals.partial.less",
+		"/projects/M3/13.08.0/_src/css/cowboy-up/phone.less",
+		"/projects/M3/13.08.0/_src/css/cowboy-up/tablet.less",
+		"/projects/M3/13.08.0/_src/css/flavor-makers/globals.partial.less",
+		"/projects/M3/13.06.0/www/freemarker/break-for-flavor/blog-detail.ftl",
+		"/projects/M3/ui-release/www/freemarker/stand-for-your-brand/home.ftl",
+		"/projects/M3/13.06.0/www/freemarker/stand-for-your-brand/home.ftl",
+		"/projects/M3/13.06.0/www/misc/rules/rulesLanding.html",
+		"/projects/M3/ui-release/_src/css/tablet.less",
+		"/projects/M3/ui-release/_src/css/phone.less",
+		"/projects/jquery-plug/dist/carousel.js",
+		"/projects/jquery-plug/package.json",
+		"/projects/spread/Gruntfile.js",
+		"/projects/spread/source/styles/scss/main.scss",
+		"/projects/M3/13.08.0/config.json",
+		"/projects/octopress/source/_posts/2012-05-15-another-image-proposal-for-responsive-design.markdown",
+		"/projects/M3/13.06.0/www/freemarker/macros/utils.ftl",
+		"/projects/M3/ui-release/www/freemarker/flavor-makers/includes/subnav.ftl",
+		"/projects/M3/ui-release/www/freemarker/the-black-book/blog-list.ftl",
+		"/projects/M3/13.06.0/www/freemarker/flavor-makers/official-rules.ftl",
+		"/projects/M3/ui-release/www/freemarker/team-marlboro/home.ftl",
+		"/projects/M3/ui-release/www/freemarker/team-marlboro/make-a-commitment/home.ftl",
+		"/projects/M3/ui-release/www/freemarker/team-marlboro/make-a-commitment/cigarette-litter-prevention.ftl",
+		"/projects/M3/13.06.0/www/freemarker/ranch/gallery-list.ftl",
+		"/projects/M3/ui-release/www/freemarker/ranch/includes/subnav.ftl",
+		"/projects/M3/ui-release/_src/css/the-black-book/globals.partial.less",
+		"/projects/M3/ui-release/_src/css/capture-the-unknown/globals.partial.less",
+		"/projects/M3/ui-release/www/freemarker/ranch/gallery-list.ftl",
+		"/projects/M3/ui-release/www/freemarker/ranch/gallery.ftl",
+		"/projects/M3/ui-release/www/freemarker/ranch/home.ftl",
+		"/projects/M3/ui-release/www/freemarker/ranch/promo.ftl",
+		"/projects/M3/13.06.0/_src/css/the-black-book/phone.less",
+		"/projects/M3/13.06.0/_src/css/break-for-flavor/phone.less",
+		"/projects/M3/ui-release/www/freemarker/masters-of-meat/get-a-gift-confirmation.ftl",
+		"/projects/M3/13.06.0/www/freemarker/flavor-makers/includes/utils.ftl",
+		"/projects/M3/13.06.0/www/freemarker/flavor-finder/home.ftl",
+		"/projects/M3/13.06.0/_src/js/make-it-a-classic/gallery.js",
+		"/projects/M3/13.06.0/_src/js/make-it-a-classic/smsform.js",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/sms-subscription.ftl",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/gallery.ftl",
+		"/projects/M3/ui-release/www/freemarker/team-marlboro/make-a-commitment/bounceback.ftl",
+		"/projects/M3/ui-release/_src/js/modules/form.js",
+		"/projects/M3/ui-release/www/freemarker/includes/header-liquid.ftl",
+		"/projects/octopress/source/_posts/2012-04-23-js-classes-aint-dead-yet.markdown",
+		"/projects/octopress/source/_posts/2012-04-25-the-importance-of-optimizing-javascript-for-responsive-design.markdown",
+		"/projects/octopress/source/_includes/custom/asides/about.html",
+		"/projects/M3/13.06.0/www/freemarker/flavor-makers/flavor-maker-blog-detail.ftl",
+		"/projects/M3/ui-release/www/freemarker/flavor-makers/comment-feed-detail.ftl",
+		"/projects/M3/ui-release/www/freemarker/flavor-makers/includes/mod-offer.ftl",
+		"/projects/M3/13.06.0/www/freemarker/my-marlboro/offers/offers.ftl",
+		"/projects/iCYTD/index.html",
+		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/gallery-list.ftl",
+		"/projects/M3/ui-release/www/freemarker/masters-of-meat/home.ftl",
+		"/projects/M3/13.06.0/_src/css/flavor-makers/desktop.less",
+		"/projects/M3/13.06.0/_src/css/flavor-makers/base.partial.less",
+		"/projects/M3/13.06.0/www/freemarker/flavor-makers/trips.ftl",
+		"/projects/M3/13.06.0/www/freemarker/masters-of-meat/get-a-gift.ftl",
+		"/projects/M3/13.06.0/www/freemarker/masters-of-meat/get-a-gift-confirmation.ftl",
+		"/projects/M3/13.06.0/www/freemarker/flavor-makers/get-a-gift-confirmation.ftl",
+		"/projects/M3/13.06.0/www/freemarker/break-for-flavor/includes/subnav.ftl",
+		"/projects/M3/13.06.0/_src/js/modules/carousel.click.js",
+		"/projects/M3/13.06.0/_src/js/modules/carousel.touch.js",
+		"/projects/M3/ui-release/_src/css/masters-of-meat/base.partial.less",
+		"/projects/M3/ui-release/_src/css/desktop.less"
+>>>>>>> 975cadc98a49b1bb16b5d5820bc8110c8de31ff1
 	],
 	"find":
 	{
@@ -283,12 +421,33 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< HEAD
 			"renderChart",
 			"debug",
 			"cons",
 			"getTim",
 			"size",
 			"monitor",
+=======
+			"it's",
+			"frm",
+			"carousel",
+			"m_site",
+			"load",
+			"altria.transitions",
+			".sign-up-section",
+			"upload",
+			"h2",
+			"carous",
+			"slides",
+			"core",
+			"offs",
+			"left",
+			"setPos",
+			"offset",
+			"loadmore",
+			"this.scrolling",
+>>>>>>> 975cadc98a49b1bb16b5d5820bc8110c8de31ff1
 			"reset",
 			"callNetFlowUI",
 			"click",
@@ -349,6 +508,7 @@
 			"initNetflowData",
 			"console",
 			"load",
+<<<<<<< HEAD
 			"loader",
 			"conso",
 			"$timeout",
@@ -411,6 +571,78 @@
 			"$filte",
 			"\"key\":",
 			"getNext"
+=======
+			"successKey",
+			"errorKey",
+			"successKey",
+			"msgKey",
+			"success",
+			"read more",
+			"comment",
+			"data-wt",
+			"icn-like",
+			"10",
+			"carous",
+			"icn-gold-badge",
+			"icn-arrow-down",
+			"icn-unsub",
+			"profile",
+			"publish",
+			"!importa",
+			"video",
+			"plug",
+			"video",
+			"offset",
+			"exten",
+			"indica",
+			"main-form",
+			"#main-form",
+			"blog-",
+			"callout",
+			"gold",
+			"volume",
+			"getPosts",
+			"getFlavorMakers",
+			"getPosts",
+			"isSw",
+			"side",
+			"error1",
+			"clickEdit",
+			"smsform",
+			"offer",
+			"location",
+			"extend",
+			"loadMoreCallback",
+			"loadmore",
+			"load more",
+			"extendUrl",
+			"activityModal",
+			"setActivityTimer",
+			"extend",
+			"m_fl",
+			"nav",
+			"getCurrentFlavorMaker",
+			"getPosts",
+			"getPostByVolUrl",
+			"dcsMultiTrack",
+			"carousel.change",
+			"arrow-dow",
+			"data-filter",
+			"ranch",
+			"<#",
+			"trips",
+			"ismam",
+			"this.scrollWidth",
+			"bb-o",
+			"gallery",
+			"facebook",
+			"this.publish('frm.success'",
+			"succes",
+			"DOI",
+			"m_",
+			"DOI",
+			"DOISt"
+>>>>>>> 975cadc98a49b1bb16b5d5820bc8110c8de31ff1
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -433,18 +665,30 @@
 			[
 				{
 					"buffer": 0,
+<<<<<<< HEAD
 					"file": "blog.sublime-project",
 					"settings":
 					{
 						"buffer_size": 63,
+=======
+					"file": "source/_posts/2013-06-17-the-carousel-of-progress.markdown",
+					"settings":
+					{
+						"buffer_size": 7017,
+>>>>>>> 975cadc98a49b1bb16b5d5820bc8110c8de31ff1
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< HEAD
 								63,
 								63
+=======
+								1348,
+								1348
+>>>>>>> 975cadc98a49b1bb16b5d5820bc8110c8de31ff1
 							]
 						],
 						"settings":
@@ -541,7 +785,11 @@
 							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
+<<<<<<< HEAD
 						"translation.y": 0.0,
+=======
+						"translation.y": 140.0,
+>>>>>>> 975cadc98a49b1bb16b5d5820bc8110c8de31ff1
 						"zoom_level": 1.0
 					},
 					"type": "text"
