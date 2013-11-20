@@ -4,7 +4,7 @@
   <title><![CDATA[Always On]]></title>
   <link href="http://HelloWurld.heroku.com/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2013-11-19T20:02:26-05:00</updated>
+  <updated>2013-11-19T21:20:01-05:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -12,6 +12,149 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bootstrapping AngularJS in Existing Application Frameworks]]></title>
+    <link href="http://HelloWurld.heroku.com/blog/2013/11/19/bootstrapping-angularjs-in-existing-application-frameworks/"/>
+    <updated>2013-11-19T20:05:00-05:00</updated>
+    <id>http://HelloWurld.heroku.com/blog/2013/11/19/bootstrapping-angularjs-in-existing-application-frameworks</id>
+    <content type="html"><![CDATA[<p>Lately, I&#8217;ve been spending alot of time in coding in AngularJS, in my case; porting existing functionality from an existing application. One challenge has been keeping the bulk of the application intact, while introducing an Angular architecture on top. Sometimes, it&#8217;s just not feasbile to rewrite everything and one must take a modular approach.</p>
+
+<p>Thankfully, the Angular team provides us <a href="http://docs.angularjs.org/api/angular.bootstrap">angular.bootstrap.js</a> ( which has nothing to do with that twitter boilerplate thing)&#8230;</p>
+
+<!-- more -->
+
+
+<p>It&#8217;s always important to start with a good modular setup regardless of existing architecture. It&#8217;s just easier to develop, collaborate, and version control your app when the files are broken out. By following <a href="http://briantford.com/blog/huuuuuge-angular-apps.html">Brian Ford&#8217;s advice</a> on structuring Angular apps, we have a basic setup that looks like this:</p>
+
+<figure class='code'><figcaption><span>directory structure </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>angular-apps
+</span><span class='line'>├── js
+</span><span class='line'>│   ├── common
+</span><span class='line'>│   │   ├── controllers
+</span><span class='line'>│   │   ├── directives
+</span><span class='line'>│   │   │   └── datepicker.js
+</span><span class='line'>│   │   ├── filters
+</span><span class='line'>│   │   │   └── strings.js
+</span><span class='line'>│   │   └── services
+</span><span class='line'>│   ├── ourapp
+</span><span class='line'>│   │   ├── controllers.js
+</span><span class='line'>│   │   ├── directives.js
+</span><span class='line'>│   │   ├── bootstrap.js
+</span><span class='line'>│   │   ├── filters.js
+</span><span class='line'>│   │   └── services.js</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The files that are in <code>common</code> will be bundled with all of our Angular libraries (including <a href="http://docs.angularjs.org/api/angular.bootstrap">angular.bootstrap.js</a>) and will be included on every page in our existing application via a Grunt build process.</p>
+
+<p>For each module/app in Angular, the important file here is <code>bootstrap.js</code>, which will handle dependencies, and bind the Angular module/app to an element.</p>
+
+<figure class='code'><figcaption><span>ng-module-bootstrap.js  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="cm">/*</span>
+</span><span class='line'><span class="cm"> Angular Module</span>
+</span><span class='line'><span class="cm"> @desc An AngularJS app in module form</span>
+</span><span class='line'><span class="cm">*/</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//define the angular app; include dependencies from angular &amp; common</span>
+</span><span class='line'><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;ourApp&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;ngResource&#39;</span><span class="p">,</span> <span class="s1">&#39;common.directives.datepicker&#39;</span><span class="p">,</span> <span class="s1">&#39;common.filters.strings&#39;</span><span class="p">]);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//load dependencies with requireJS</span>
+</span><span class='line'><span class="nx">require</span><span class="p">([</span><span class="s1">&#39;apps/ourapp/directives&#39;</span><span class="p">,</span><span class="s1">&#39;apps/ourapp/controllers&#39;</span><span class="p">,</span><span class="s1">&#39;apps/ourapp/services&#39;</span><span class="p">,</span><span class="s1">&#39;apps/ourapp/filters&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">directives</span><span class="p">,</span> <span class="nx">controllers</span><span class="p">,</span> <span class="nx">services</span><span class="p">,</span> <span class="nx">filters</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">angular</span><span class="p">.</span><span class="nx">bootstrap</span><span class="p">(</span><span class="nx">angular</span><span class="p">.</span><span class="nx">element</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#ourApp&#39;</span><span class="p">)),</span> <span class="p">[</span><span class="s1">&#39;ourApp&#39;</span><span class="p">]);</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The app is bound to the element in the bootstrap method <code>angular.bootstrap(angular.element($('#ourApp')), ['ourApp']);</code>.</p>
+
+<p>You can see we are using require.js to handle the dependencies. A Grunt task to flatten the require dependencies is a clear choice. Now you&#8217;ll be able to manage all your dependencies for that app outside of your existing application framework; quite useful if you need to build the backend for each change.</p>
+
+<p>Now it&#8217;s simply a matter of injecting the element and script tag with the bootstrap file from your existing application when needed. A Java/Scala/PHP Class to do this automagically is a good idea.</p>
+
+<figure class='code'><figcaption><span>backend injection on demand  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;#ourApp&quot;</span><span class="nt">&gt;&lt;ourAppEl/&gt;&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;angular-apps/ourapp/bootstrap.js&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Create a directive to load an HTML template can be the basis for all declarations, <code>&lt;ourAppEL&gt;</code> in this case. All of the directives, controllers, services, and filters for this app will refer to the Angular module we created in the bootstrap file:</p>
+
+<figure class='code'><figcaption><span>ourapp/views/directives.js  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">//get the existing angular module; must be written this way for the ngminifier</span>
+</span><span class='line'><span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;outApp&#39;</span><span class="p">).</span><span class="nx">directive</span><span class="p">(</span><span class="s1">&#39;ourAppEl&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'>  <span class="k">return</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">restrict</span><span class="o">:</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">replace</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">templateUrl</span><span class="o">:</span> <span class="s1">&#39;../js/angular-apps/ourapp/views/main.html&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">controller</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">,</span> <span class="nx">$element</span><span class="p">,</span> <span class="nx">$attrs</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>          <span class="c1">//stuff</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>  <span class="p">};</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you need another instance of your Angular app, your backend Classes should know this and you will only need the bootstrap code and element.</p>
+
+<figure class='code'><figcaption><span>backend injection on demand  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;#ourApp&quot;</span><span class="nt">&gt;&lt;ourAppEl/&gt;&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nx">angular</span><span class="p">.</span><span class="nx">bootstrap</span><span class="p">(</span><span class="nx">angular</span><span class="p">.</span><span class="nx">element</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#ourApp2&#39;</span><span class="p">)),</span> <span class="p">[</span><span class="s1">&#39;ourApp&#39;</span><span class="p">]);</span>
+</span><span class='line'><span class="nt">&lt;/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now the downside: <em>App Teardown</em></p>
+
+<p>There is still no great solution for this when using this approach (I&#8217;m working on it). I&#8217;m also confident the Angular core team will come up with something.</p>
+
+<p>You can see more about that <a href="https://github.com/angular/angular.js/issues/1537#issuecomment-10164971">here</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Carousel of Progress]]></title>
