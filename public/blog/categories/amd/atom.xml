@@ -4,7 +4,7 @@
   <title><![CDATA[Category: amd | Always On]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/amd/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2013-06-18T11:56:12-04:00</updated>
+  <updated>2013-11-19T19:56:21-05:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -35,78 +35,42 @@
 
 <p>Here's a carousel widget written in jQuery:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>carousel.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">define</span><span class="p">([</span><span class="nx">Class</span><span class="p">],</span><span class="kd">function</span><span class="p">(</span><span class="nx">Class</span><span class="p">)</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="kd">var</span> <span class="nx">Carousel</span> <span class="o">=</span> <span class="nx">Class</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-</span><span class='line'>    <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>        <span class="c1">//options here</span>
-</span><span class='line'>    <span class="p">},</span>
-</span><span class='line'>    <span class="nx">init</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>        <span class="k">this</span><span class="p">.</span><span class="nx">_super</span><span class="p">(</span><span class="nx">opts</span><span class="p">,</span> <span class="nx">element</span><span class="p">);</span>
-</span><span class='line'>        <span class="c1">//instance vars live here</span>
-</span><span class='line'>        <span class="k">this</span><span class="p">.</span><span class="nx">intPos</span><span class="p">;</span>
-</span><span class='line'>        <span class="k">this</span><span class="p">.</span><span class="nx">attachEvents</span><span class="p">();</span>
-</span><span class='line'>    <span class="p">},</span>
-</span><span class='line'>    <span class="nx">attachEvents</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.arrow-next&#39;</span><span class="p">,</span><span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="nx">$</span><span class="p">.</span><span class="nx">proxy</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>            <span class="k">this</span><span class="p">.</span><span class="nx">scrollNext</span><span class="p">();</span>
-</span><span class='line'>        <span class="p">},</span><span class="k">this</span><span class="p">));</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.arrow-prev&#39;</span><span class="p">,</span><span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span><span class="nx">$</span><span class="p">.</span><span class="nx">proxy</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'>            <span class="k">this</span><span class="p">.</span><span class="nx">scrollPrev</span><span class="p">();</span>
-</span><span class='line'>        <span class="p">},</span><span class="k">this</span><span class="p">));</span>
-</span><span class='line'>    <span class="p">},</span>
-</span><span class='line'>    <span class="nx">scrollNext</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>        <span class="c1">// calculate the intPos to move next here</span>
-</span><span class='line'>        <span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">css</span><span class="p">({</span><span class="s1">&#39;left&#39;</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">intPos</span><span class="p">});</span> <span class="c1">//css3 animation</span>
-</span><span class='line'>    <span class="p">},</span>
-</span><span class='line'>    <span class="nx">scrollPrev</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>        <span class="c1">//calculate the intPos to move previous here</span>
-</span><span class='line'>        <span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">css</span><span class="p">({</span><span class="s1">&#39;left&#39;</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">intPos</span><span class="p">});</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">return</span> <span class="nx">Carousel</span><span class="p">;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock carousel.js lang:js %}
+define([Class],function(Class) {
+    var Carousel = Class.extend({
+        options: {
+            //options here
+        },
+        init: function() {
+            this._super(opts, element);
+            //instance vars live here
+            this.intPos;
+            this.attachEvents();
+        },
+        attachEvents: function() {
+            $('.arrow-next',this.element).on('click',$.proxy(function(){
+                this.scrollNext();
+            },this));</p>
+
+<pre><code>        $('.arrow-prev',this.element).on('click',$.proxy(function(){
+            this.scrollPrev();
+        },this));
+    },
+    scrollNext: function() {
+        // calculate the intPos to move next here
+        this.element.css({'left': this.intPos}); //css3 animation
+    },
+    scrollPrev: function () {
+        //calculate the intPos to move previous here
+        this.element.css({'left': this.intPos});
+    }
+});
+
+return Carousel;
+</code></pre>
+
+<p>}
+{% endcodeblock %}</p>
 
 <p>Ok, so we have a little module that extends class, inits, bind itself to the 'this.element' data, attaches click events to arrows and scrolls the container. Cool...</p>
 
@@ -116,54 +80,30 @@
 
 <p>AMD gives us a better way:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>carousel.touch.js  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">define</span><span class="p">([</span><span class="s1">&#39;carousel&#39;</span><span class="p">],</span><span class="kd">function</span><span class="p">(</span><span class="nx">Carousel</span><span class="p">)</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="kd">var</span> <span class="nx">Carousel</span> <span class="o">=</span> <span class="nx">Carousel</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
-</span><span class='line'>    <span class="nx">attachEvents</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>        <span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;touchstart&#39;</span><span class="p">,</span><span class="nx">$</span><span class="p">.</span><span class="nx">proxy</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
-</span><span class='line'>            <span class="k">this</span><span class="p">.</span><span class="nx">startPos</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">originalEvent</span><span class="p">.</span><span class="nx">touches</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">pageX</span><span class="p">;</span>
-</span><span class='line'>        <span class="p">},</span><span class="k">this</span><span class="p">));</span>
-</span><span class='line'>        <span class="k">this</span><span class="p">.</span><span class="nx">element</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;touchmove&#39;</span><span class="p">,</span><span class="nx">$</span><span class="p">.</span><span class="nx">proxy</span><span class="p">(</span><span class="nx">functione</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
-</span><span class='line'>            <span class="k">this</span><span class="p">.</span><span class="nx">endPos</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">originalEvent</span><span class="p">.</span><span class="nx">changedTouches</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">pageX</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">startPos</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="k">this</span><span class="p">.</span><span class="nx">endPos</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>                <span class="k">this</span><span class="p">.</span><span class="nx">scrollPrev</span><span class="p">();</span>
-</span><span class='line'>            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-</span><span class='line'>                <span class="k">this</span><span class="p">.</span><span class="nx">scrollNext</span><span class="p">();</span>
-</span><span class='line'>            <span class="p">}</span>
-</span><span class='line'>        <span class="p">},</span><span class="k">this</span><span class="p">));</span>
-</span><span class='line'>    <span class="p">},</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">return</span> <span class="nx">Carousel</span><span class="p">;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock carousel.touch.js lang:js %}
+define(['carousel'],function(Carousel) {
+    var Carousel = Carousel.extend({
+        attachEvents: function() {
+            this.element.on('touchstart',$.proxy(function(e){
+                this.startPos = e.originalEvent.touches[0].pageX;
+            },this)); <br/>
+            this.element.on('touchmove',$.proxy(functione(e){
+                this.endPos = e.originalEvent.changedTouches[0].pageX;</p>
+
+<pre><code>            if (this.startPos &lt; this.endPos) {
+                this.scrollPrev();
+            } else {
+                this.scrollNext();
+            }
+        },this));
+    },
+});
+
+return Carousel;
+</code></pre>
+
+<p>}
+{% endcodeblock %}</p>
 
 <p>Now we are only replacing the parts we need, staying DRY, and leveraging the prototype chain. This makes more sense when there are more shared methods, but you get the gist.</p>
 
@@ -174,24 +114,13 @@ Now it's just a matter of adding the right script for each device (this is where
 
 <p>One way to load this on the client would be:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>head   </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">Modernizr</span><span class="p">.</span><span class="nx">load</span><span class="p">({</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">test</span><span class="o">:</span> <span class="nx">Modernizr</span><span class="p">.</span><span class="nx">touch</span><span class="p">,</span>
-</span><span class='line'><span class="nx">yep</span><span class="o">:</span> <span class="s1">&#39;carousel.touch.js&#39;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">nope</span><span class="o">:</span> <span class="s1">&#39;carousel.js&#39;</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock head lang:js  %}
+Modernizr.load({
+    test: Modernizr.touch,
+    yep: 'carousel.touch.js',
+    nope: 'carousel.js'
+});
+{% endcodeblock  %}</p>
 
 <h2>Ways to improve</h2>
 

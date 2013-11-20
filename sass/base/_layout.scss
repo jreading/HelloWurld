@@ -20,6 +20,12 @@ $header-padding-bottom: 1.5em !default;
 
 .group { @include pie-clearfix; }
 
+.group:after, body > header:after, body > nav:after, body > footer:after, body #content > article:after, body #content > div > article:after, body #content > div > section:after, body div.pagination:after, aside.sidebar:after, #main:after, #content:after, .collapse-sidebar aside.sidebar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @mixin collapse-sidebar {
   float: none;
   width: auto;

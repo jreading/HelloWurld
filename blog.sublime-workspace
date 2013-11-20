@@ -4,278 +4,82 @@
 		"selected_items":
 		[
 			[
-				"set",
-				"setPos"
+				"processing",
+				"processingNow"
 			],
 			[
-				"text-",
-				"text-decoration"
+				"pro",
+				"processingNow"
 			],
 			[
-				"zip",
-				"zipCode"
+				"h",
+				"hidden"
 			],
 			[
-				"te",
-				"text-decoration"
-			],
-			[
-				"text",
-				"text-transform"
-			],
-			[
-				"resi",
-				"resizeVideo"
-			],
-			[
-				"pred",
-				"predictiveFilter"
-			],
-			[
-				"respo",
-				"responseText"
-			],
-			[
-				"toggle",
-				"toggleElem"
-			],
-			[
-				"or",
-				"originalTotElements"
-			],
-			[
-				"to",
-				"originalTotElements"
-			],
-			[
-				"off",
-				"offset"
-			],
-			[
-				"trn",
-				"transitionEnd"
-			],
-			[
-				"gal",
-				"galleryImgHeight"
-			],
-			[
-				"infinite",
-				"infinite"
-			],
-			[
-				"in",
-				"infinite"
-			],
-			[
-				"indic",
-				"indicatorsLabel"
-			],
-			[
-				"font",
-				"font-weight"
-			],
-			[
-				"ex",
-				"extendUrl"
-			],
-			[
-				"report",
-				"report-img-thankyou"
-			],
-			[
-				"remove",
-				"removeClass"
-			],
-			[
-				"o",
-				"offset"
-			],
-			[
-				"res",
-				"responseType"
-			],
-			[
-				"for",
-				"formref"
-			],
-			[
-				"the",
-				"theForm"
-			],
-			[
-				"color",
-				"color7"
-			],
-			[
-				"dis",
-				"disableForm"
-			],
-			[
-				"msg",
-				"msgs"
-			],
-			[
-				"submit",
-				"submitForm"
-			],
-			[
-				"add",
-				"addClass"
-			],
-			[
-				"cre",
-				"createElement"
-			],
-			[
-				"remoe",
-				"removeClass"
-			],
-			[
-				"elemT",
-				"elemToShow"
-			],
-			[
-				"form",
-				"resetForm"
-			],
-			[
-				"bor",
-				"border-radius"
-			],
-			[
-				"trans",
-				"transitionEnd"
-			],
-			[
-				"ma",
-				"max-height"
-			],
-			[
-				"brig",
-				"bright-color1"
-			],
-			[
-				"dar",
-				"dark-color3"
-			],
-			[
-				"da",
-				"dark-color3"
-			],
-			[
-				"no",
-				"nocompress"
-			],
-			[
-				"list-style",
-				"list-style-type"
-			],
-			[
-				"bri",
-				"bright-color2"
-			],
-			[
-				"br",
-				"bright-color1"
-			],
-			[
-				"invali",
-				"invalid-color"
-			],
-			[
-				"inva",
-				"invalid-color"
-			],
-			[
-				"th",
-				"theForm"
-			],
-			[
-				"border",
-				"border-color1"
+				"ini",
+				"initData"
 			],
 			[
 				"i",
-				"italic"
+				"i18n"
 			],
 			[
-				"bord",
-				"border-color1"
+				"fr",
+				"fromDate"
 			],
 			[
-				"forme",
-				"formeditor"
+				"s",
+				"separate"
 			],
 			[
-				"bg",
-				"background"
+				"flex",
+				"flex-gutter"
 			],
 			[
-				"key",
-				"key-not-found"
+				"selec",
+				"selected"
 			],
 			[
-				"char",
-				"char1Props"
+				"angular",
+				"angular-apps"
 			],
 			[
-				"arr",
-				"arrbbShapes"
+				"ge",
+				"$scope.getLatestScheduleInst"
 			],
 			[
-				"get",
-				"getComputedStyle"
+				"action",
+				"actionInst"
 			],
 			[
-				"offSet",
-				"offsetHeight"
+				"inline",
+				"inline-block"
 			],
 			[
-				"offset",
-				"offsetWidth"
+				"border",
+				"border-radius"
 			],
 			[
-				"offs",
-				"offsetHeight"
+				"font-",
+				"font-weight"
 			],
 			[
-				"prex",
-				"prefixes"
+				"tr",
+				"transparent"
 			],
 			[
-				"getElement",
-				"getElementsByTagName"
-			],
-			[
-				"st",
-				"style"
-			],
-			[
-				"e",
-				"extend"
-			],
-			[
-				"cloe",
-				"closest"
-			],
-			[
-				"tou",
-				"touch"
-			],
-			[
-				"height",
-				"Height"
+				"in",
+				"inline-block"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "source/_posts/2013-05-25-front-end-web-development-is-the-most-difficult-programming-job-in-the-world.markdown",
+			"file": "blog.sublime-project",
 			"settings":
 			{
-				"buffer_size": 6009,
+				"buffer_size": 63,
 				"line_ending": "Unix"
 			}
 		}
@@ -283,7 +87,7 @@
 	"build_system": "Packages/JSHint/JSHint.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 327.0,
 		"selected_items":
 		[
 			[
@@ -291,127 +95,63 @@
 				"Word Wrap: Toggle"
 			],
 			[
-				"",
-				"About"
-			],
-			[
-				"ind",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"in",
-				"Indentation: Reindent Lines"
+				"space",
+				"Indentation: Convert to Spaces"
 			],
 			[
 				"ta",
 				"Indentation: Convert to Tabs"
 			],
 			[
-				"cas",
-				"Convert Case: Upper Case"
-			],
-			[
 				"ins",
 				"Package Control: Install Package"
 			],
 			[
-				"setting",
-				"Preferences: Package Control Settings – User"
-			],
-			[
-				"package s",
-				"Preferences: Browse Packages"
-			],
-			[
-				"pac",
-				"Preferences: Browse Packages"
-			],
-			[
-				"enab",
-				"Package Control: Enable Package"
-			],
-			[
-				"pa",
-				"Package Control: Disable Package"
-			],
-			[
-				"ke",
-				"Preferences: Key Bindings - Default"
-			],
-			[
-				"tidy",
-				"Tidy CSS (Highest Compression)"
-			],
-			[
-				"css",
-				"Tidy CSS"
-			],
-			[
-				"e",
-				"Snippet: else (#e)"
-			],
-			[
-				"snip",
-				"Snippet: if (#if)"
-			],
-			[
-				"sn",
-				"Snippet: Macro (@)"
-			],
-			[
-				"W",
-				"Word Wrap: Toggle"
-			],
-			[
-				"wr",
-				"Word Wrap: Toggle"
-			],
-			[
-				"set",
-				"Set Syntax: HTML"
-			],
-			[
-				"sy",
-				"Set Syntax: HTML"
-			],
-			[
-				"p",
-				"Package Control: Install Package"
+				"ind",
+				"Indentation: Reindent Lines"
 			],
 			[
 				"conv",
 				"Indentation: Convert to Spaces"
 			],
 			[
-				"tab",
-				"View: Toggle Tabs"
-			],
-			[
-				"spa",
+				"conver",
 				"Indentation: Convert to Spaces"
 			],
 			[
-				"wo",
-				"Word Wrap: Toggle"
+				"upp",
+				"Convert Case: Upper Case"
 			],
 			[
-				"wor",
-				"Word Wrap: Toggle"
+				"subli",
+				"Preferences: SublimeLinter Settings – Default"
 			],
 			[
-				"wra",
-				"Word Wrap: Toggle"
+				"pac",
+				"Package Control: Remove Package"
 			],
 			[
-				"install",
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
 				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: Enable Package"
 			]
 		],
-		"width": 503.0
+		"width": 467.0
 	},
 	"console":
 	{
-		"height": 213.0
+		"height": 125.0
 	},
 	"distraction_free":
 	{
@@ -424,207 +164,118 @@
 	},
 	"file_history":
 	[
-		"/projects/M3/13.06.0/www/freemarker/my-marlboro/communication-preferences.ftl",
-		"/projects/M3/13.06.0/_src/css/make-it-a-classic/base.partial.less",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/confirmation.ftl",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/guidelines.ftl",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/upload-photo.ftl",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/includes/smsform.ftl",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/daily-limit.ftl",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/home.ftl",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/week.ftl",
-		"/projects/M3/13.06.0/_src/css/the-black-book/base.partial.less",
-		"/projects/M3/13.06.0/_src/css/products/base.partial.less",
-		"/projects/M3/13.06.0/_src/css/base.partial.less",
-		"/projects/M3/13.06.0/build.js",
-		"/projects/M3/ui-release/build.js",
-		"/projects/M3/13.06.0/_src/js/altria.js",
-		"/projects/M3/13.06.0/_src/js/modules/carousel.js",
-		"/projects/M3/13.06.0/www/freemarker/the-black-book/blog-detail.ftl",
-		"/projects/M3/13.06.0/_src/css/break-for-flavor/desktop.less",
-		"/projects/M3/13.06.0/www/freemarker/products/gold.ftl",
-		"/projects/M3/13.06.0/_src/css/break-for-flavor/globals.partial.less",
-		"/projects/M3/13.06.0/_src/css/capture-the-unknown/base.partial.less",
-		"/projects/M3/13.06.0/www/freemarker/capture-the-unknown/share-a-photo/guidelines.ftl",
-		"/projects/M3/13.06.0/_src/css/break-for-flavor/base.partial.less",
-		"/projects/M3/13.06.0/www/freemarker/break-for-flavor/blog-list.ftl",
-		"/projects/M3/13.06.0/www/freemarker/the-black-book/blog-list.ftl",
-		"/projects/M3/13.06.0/www/freemarker/break-for-flavor/home.ftl",
-		"/projects/M3/13.06.0/www/freemarker/capture-the-unknown/share-a-photo/home.ftl",
-		"/projects/M3/13.06.0/_src/css/my-marlboro/phone.less",
-		"/projects/M3/13.06.0/www/freemarker/my-marlboro/profile.ftl",
-		"/projects/M3/13.06.0/www/freemarker/capture-the-unknown/share-a-photo/confirmation.ftl",
-		"/projects/M3/13.06.0/www/freemarker/capture-the-unknown/share-a-photo/daily-limit.ftl",
-		"/projects/M3/13.06.0/www/freemarker/the-black-book/home.ftl",
-		"/projects/M3/13.06.0/www/freemarker/ranch/promo.ftl",
-		"/projects/M3/13.06.0/www/freemarker/team-marlboro/project-hub/home.ftl",
-		"/projects/octopress/source/_posts/2013-05-16-this-thing-on-dot-dot-dot.markdown",
-		"/projects/octopress/source/_posts/2013-04-25-front-end-web-development-is-the-most-difficult-programming-job-in-the-world.markdown",
-		"/projects/octopress/_config.yml",
-		"/projects/RPlusBuildScript/rplusbuild.js",
-		"/projects/RPlusBuildScript/config.json",
-		"/projects/M3/13.06.0/www/freemarker/search/predictive-results.ftl",
-		"/projects/M3/13.06.0/_src/js/modules/form.js",
-		"/projects/M3/13.06.0/www/freemarker/flavor-makers/flavor-maker.ftl",
-		"/projects/M3/13.06.0/www/js/modules/form.js",
-		"/projects/M3/13.06.0/www/js/modules/form.thin.js",
-		"/projects/RPlusBuildScript/_src/css/tablet.less",
-		"/projects/RPlusBuildScript/_src/css/smartphone.less",
-		"/projects/M3/13.06.0/package.json",
-		"/projects/M3/13.06.0/config.json",
-		"/projects/RPlusBuildScript/RPlusBuildScript.sublime-project",
-		"/projects/M3/ui-release/package.json",
-		"/projects/M3/ui-release/config.json",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/includes/subnav.ftl",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/choose-category.ftl",
-		"/projects/M3/ui-release/_src/js/altria.js",
-		"/projects/M3/ui-release/www/freemarker/includes/iperceptions.ftl",
-		"/projects/M3/ui-release/www/freemarker/master.ftl",
-		"/projects/jquery-plug/Gruntfile.js",
-		"/projects/M3/13.06.0/_src/js/libs/msgs.js",
-		"/projects/M3/13.06.0/www/freemarker/master.ftl",
-		"/projects/M3/13.06.0/_src/js/mobile.js",
-		"/projects/M3/13.06.0/www/freemarker/flavor-makers/includes/subnav.ftl",
-		"/projects/M3/13.08.0/_src/css/cowboy-up/base.partial.less",
-		"/projects/M3/13.08.0/_src/css/cowboy-up/desktop.less",
-		"/projects/M3/13.08.0/_src/css/cowboy-up/globals.partial.less",
-		"/projects/M3/13.08.0/_src/css/cowboy-up/phone.less",
-		"/projects/M3/13.08.0/_src/css/cowboy-up/tablet.less",
-		"/projects/M3/13.08.0/_src/css/flavor-makers/globals.partial.less",
-		"/projects/M3/13.06.0/www/freemarker/break-for-flavor/blog-detail.ftl",
-		"/projects/M3/ui-release/www/freemarker/stand-for-your-brand/home.ftl",
-		"/projects/M3/13.06.0/www/freemarker/stand-for-your-brand/home.ftl",
-		"/projects/M3/13.06.0/www/misc/rules/rulesLanding.html",
-		"/projects/M3/ui-release/_src/css/tablet.less",
-		"/projects/M3/ui-release/_src/css/phone.less",
-		"/projects/jquery-plug/dist/carousel.js",
-		"/projects/jquery-plug/package.json",
-		"/projects/spread/Gruntfile.js",
-		"/projects/spread/source/styles/scss/main.scss",
-		"/projects/M3/13.08.0/config.json",
-		"/projects/octopress/source/_posts/2012-05-15-another-image-proposal-for-responsive-design.markdown",
-		"/projects/M3/13.06.0/www/freemarker/macros/utils.ftl",
-		"/projects/M3/ui-release/www/freemarker/flavor-makers/includes/subnav.ftl",
-		"/projects/M3/ui-release/www/freemarker/the-black-book/blog-list.ftl",
-		"/projects/M3/13.06.0/www/freemarker/flavor-makers/official-rules.ftl",
-		"/projects/M3/ui-release/www/freemarker/team-marlboro/home.ftl",
-		"/projects/M3/ui-release/www/freemarker/team-marlboro/make-a-commitment/home.ftl",
-		"/projects/M3/ui-release/www/freemarker/team-marlboro/make-a-commitment/cigarette-litter-prevention.ftl",
-		"/projects/M3/13.06.0/www/freemarker/ranch/gallery-list.ftl",
-		"/projects/M3/ui-release/www/freemarker/ranch/includes/subnav.ftl",
-		"/projects/M3/ui-release/_src/css/the-black-book/globals.partial.less",
-		"/projects/M3/ui-release/_src/css/capture-the-unknown/globals.partial.less",
-		"/projects/M3/ui-release/www/freemarker/ranch/gallery-list.ftl",
-		"/projects/M3/ui-release/www/freemarker/ranch/gallery.ftl",
-		"/projects/M3/ui-release/www/freemarker/ranch/home.ftl",
-		"/projects/M3/ui-release/www/freemarker/ranch/promo.ftl",
-		"/projects/M3/13.06.0/_src/css/the-black-book/phone.less",
-		"/projects/M3/13.06.0/_src/css/break-for-flavor/phone.less",
-		"/projects/M3/ui-release/www/freemarker/masters-of-meat/get-a-gift-confirmation.ftl",
-		"/projects/M3/13.06.0/www/freemarker/flavor-makers/includes/utils.ftl",
-		"/projects/M3/13.06.0/www/freemarker/flavor-finder/home.ftl",
-		"/projects/M3/13.06.0/_src/js/make-it-a-classic/gallery.js",
-		"/projects/M3/13.06.0/_src/js/make-it-a-classic/smsform.js",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/sms-subscription.ftl",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/gallery.ftl",
-		"/projects/M3/ui-release/www/freemarker/team-marlboro/make-a-commitment/bounceback.ftl",
-		"/projects/M3/ui-release/_src/js/modules/form.js",
-		"/projects/M3/ui-release/www/freemarker/includes/header-liquid.ftl",
-		"/projects/octopress/source/_posts/2012-04-23-js-classes-aint-dead-yet.markdown",
-		"/projects/octopress/source/_posts/2012-04-25-the-importance-of-optimizing-javascript-for-responsive-design.markdown",
-		"/projects/octopress/source/_includes/custom/asides/about.html",
-		"/projects/M3/13.06.0/www/freemarker/flavor-makers/flavor-maker-blog-detail.ftl",
-		"/projects/M3/ui-release/www/freemarker/flavor-makers/comment-feed-detail.ftl",
-		"/projects/M3/ui-release/www/freemarker/flavor-makers/includes/mod-offer.ftl",
-		"/projects/M3/13.06.0/www/freemarker/my-marlboro/offers/offers.ftl",
-		"/projects/iCYTD/index.html",
-		"/projects/M3/13.06.0/www/freemarker/make-it-a-classic/gallery-list.ftl",
-		"/projects/M3/ui-release/www/freemarker/masters-of-meat/home.ftl",
-		"/projects/M3/13.06.0/_src/css/flavor-makers/desktop.less",
-		"/projects/M3/13.06.0/_src/css/flavor-makers/base.partial.less",
-		"/projects/M3/13.06.0/www/freemarker/flavor-makers/trips.ftl",
-		"/projects/M3/13.06.0/www/freemarker/masters-of-meat/get-a-gift.ftl",
-		"/projects/M3/13.06.0/www/freemarker/masters-of-meat/get-a-gift-confirmation.ftl",
-		"/projects/M3/13.06.0/www/freemarker/flavor-makers/get-a-gift-confirmation.ftl",
-		"/projects/M3/13.06.0/www/freemarker/break-for-flavor/includes/subnav.ftl",
-		"/projects/M3/13.06.0/_src/js/modules/carousel.click.js",
-		"/projects/M3/13.06.0/_src/js/modules/carousel.touch.js",
-		"/projects/M3/ui-release/_src/css/masters-of-meat/base.partial.less",
-		"/projects/M3/ui-release/_src/css/desktop.less",
-		"/projects/M3/ui-release/_src/css/base.partial.less"
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/lib/angular/angular.min.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/package.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/build.xml",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/config.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/netflow/directives.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/plugins/controllers.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/plugins/views/main.html",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/proofui/war/styles/dev.css",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/styles/_layout.scss",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/styles/main.scss",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/filters/strings.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/netflow/controllers.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/styles/_legacy.scss",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/styles/_base.scss",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/netflow/views/main.html",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/styles/_module.scss",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/Gruntfile.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/readme.md",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/docs/assets/css/styles.css",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/styles/style.md",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/styles/styleguide.md",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/plugins/directives.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/directives/form.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/directives/tabs.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/directives/tooltip.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/directives/maxpanel.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/lib/sentinel.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/netflow/bootstrap.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/filters/cron.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/localize/i18n/resources-locale_default.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/localize/i18n/resources-locale_en-US.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/styles/_globals.scss",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/lib/debug/debug.min.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/plugins/bootstrap.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/localize/localize.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/netflow/services.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/localize/i18n/resources-locale_es-ES.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/lib/highcharts/highchartsUtil.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/localize/i18n/resources-locale_es.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/views/maxpanel.html",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/views/form.html",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/lib/highcharts/highstock.min.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/lib/highcharts/exporting.min.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/proofui/war/WEB-INF/views/main.jsp",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/lib/highcharts/highcharts.min.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/netflow/data/netflow.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/netflow/filters.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/lib/highcharts/highcharts.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/lib/highcharts/exporting.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/war/js/lib/highcharts/exporting.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/views/tabs.html",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/plugins/filters.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/plugins/services.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/alerts/controllers.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/localize/i18n/resources-locale_es-ES.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/localize/i18n/resources-locale_en-US.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/localize/i18n/resources-locale_default.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/localize/i18n/resources-locale_es.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/_tmp/images/icon-small-fail.png",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/node_modules/grunt-encode-images/package.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/node_modules/grunt-encode-images/tasks/grunt-encode-images.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/node_modules/grunt-encode-images/bin/grunt-encode-images",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/alerts/views/main.html",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/directives/windowpanel.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/baselining/build.xml",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/netflow/controller.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/plugins/data/list.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/views/tooltip.html",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/angular-apps/common/filters/istype.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/js/lib/require/require.config.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/styles/_state.scss",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/styles/theme.scss",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/styles/lib/reset.css",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/proofui/war_staging/WEB-INF/views/main.jsp",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/angular-apps/common/directives/tabs.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/angular-apps/common/views/tabs.html",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/angular-apps/plugins/controllers.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/angular-apps/plugins/data/list.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/angular-apps/plugins/directives.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/Gruntfile.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/angular-apps/plugins/views/main.html",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/angular-apps/plugins/services.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/angular-apps/plugins/bootstrap.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/lib/sentinel.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/config.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/angular-apps/common/services/list.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/lib/angular/angular-resource.min.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/lib/angular/angular.min.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/js/angular-apps/plugins/views/element.html",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/package.json",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/styles/main.scss",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/_tmp/js/angular-apps/plugins/controller.js",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/ui_src/_tmp/test/js/angular-apps/plugins/controller.js",
+		"/Users/jreading/projects/siem-trunk/src/ebuild/masterbuild/build.properties.inuse",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/app/war/styles/base.css",
+		"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/proofui/war/com.novell.siem.proof.Main/js/angular.min.js",
+		"/Users/jreading/Documents/test.js",
+		"/Users/jreading/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings"
 	],
 	"find":
 	{
-		"height": 55.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
 		"height": 0.0,
 		"where_history":
 		[
-			"/projects/M3/13.06.0/www/freemarker/",
-			"/projects/M3/13.06.0/www/freemarker/break-for-flavor",
-			"/projects/M3/13.06.0/freemarker/break-for-flavor/",
-			"/projects/M3/13.06.0/freemarker/icn-likesbreak-for-flavor/",
-			"/projects/M3/ui-release/",
-			"/projects/M3/ui-release/www/freemarker/",
-			"/projects/M3/ui-release/www/freemarker/flavor-makers",
-			"/projects/M3/ui-release/www/freemarker",
-			"/projects/M3/13.06.0/www/freemarker",
-			"/projects/M3/ui-release/_src",
-			"/projects/M3/ui-release/www/",
-			"/projects/M3/13.06.0/www/freemarker/",
-			"/projects/M3/13.04.0/www/freemarker/",
-			"/projects/M3/ui-release/www/freemarker/flavor-makers",
-			"/projects/M3/ui-release/www/freemarker/",
-			"/projects/M3/13.04.0/www/freemarker/",
-			"/projects/M3/13.06.0/www/freemarker/",
-			"/projects/M3/13.04.0/www/freemarker/",
-			"/projects/M3/13.04.0/www/freemarker/ranch/",
-			"/projects/M3/ui-release/www/freemarker",
-			"/projects/M3/13.04.0/www/",
-			"/projects/M3/ui-release/www/",
-			"/projects/M3/ui-release/www/freemarker/wide-open-flavor",
-			"/projects/M3/13.04.0/www/freemarker/flavor-makers",
-			"/projects/M3/ui-release/www/freemarker/",
-			"/projects/M3/13.04.0/www/freemarker/",
-			"/projects/M3/13.04.0/www/freemarker/my-marlboro",
-			"/projects/M3/13.02.0/www/freemarker/my-marlboro",
-			"/projects/M3/13.02.0/www/",
-			"/projects/M3/13.02.0/www/freemarker/team-marlboro",
-			"/projects/m3dxide/marlboro/ui/2012/12.12.0/www/freemarker/flavor-makers",
-			"/projects/m3dxide/marlboro/ui/2013/12.12.0/www/freemarker/flavor-makers",
-			"/projects/m3dxide/marlboro/ui/2013/13.02.0/www/freemarker/flavor-makers",
-			"/projects/m3dxide/marlboro/ui/2013/13.02.0/www/freemarker/wide-open-flavor",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/www/freemarker",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/www/",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/_src/css",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/_src",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/www/",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/www/freemarker",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/_src",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/www/freemarker",
-			"<open files>,/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/www/freemarker",
-			"<open files>",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/www/freemarker",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/www/",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/www/freemarker/",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/freemarker/",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/freemarker",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/www",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/_src/css",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/12.12.0/trunk/UI/www/freemarker",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/marlboro-black/trunk/UI/www/freemarker",
-			"<open files>",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/marlboro-black/trunk/UI/www/freemarker",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/marlboro-black/trunk/UI/www/freemarkerccncc",
-			"/projects/leoburnett-m30/trunk/marlboro3.0/marlboro-black/trunk/UI/www",
-			"<open files>,/projects/leoburnett-m30/trunk/marlboro3.0/marlboro-black/trunk/UI/www",
-			"<open files>",
-			""
+			"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/",
+			"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/node_modules/",
+			"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/node_modules/git:",
+			"/Users/jreading/projects/siem-trunk/src/jclient/WebConsole/angularui/node_modules/grunt-styleguide/node_modules/styledocco/node_modules"
 		]
 	},
 	"find_state":
@@ -632,134 +283,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"frm",
-			"carousel",
-			"m_site",
-			"load",
-			"altria.transitions",
-			".sign-up-section",
-			"upload",
-			"h2",
-			"carous",
-			"slides",
-			"core",
-			"offs",
-			"left",
-			"setPos",
-			"offset",
-			"loadmore",
-			"this.scrolling",
+			"renderChart",
+			"debug",
+			"cons",
+			"getTim",
+			"size",
+			"monitor",
 			"reset",
-			"offSet",
-			"text",
-			"carous",
-			"infin",
-			"load-",
-			"button",
-			"indicator",
-			"slides",
-			"text",
-			"slidesText",
-			"texts",
-			"no ",
-			"to enable SMS participation",
-			"up",
-			"presenter",
-			"3rd",
-			"nav",
-			"disabled",
-			"arrow",
-			"go to this",
-			"kit",
-			"1 MB",
-			"1",
-			"uploader",
-			"(function",
-			"amd",
-			"activity",
-			"profile",
-			"upload",
-			"m_marlboro",
-			"text-sha",
-			"libs",
-			"upl",
-			"fontface1",
-			"fontface",
-			"font-face",
-			"off",
-			"getSubscriptionStatus",
+			"callNetFlowUI",
+			"click",
+			"legendItemClick",
+			"initNetflowData",
+			"cons",
+			"eventTime",
+			"prepareData",
+			"xaxisPlotLineValue",
+			"eventTime",
+			"prepareData",
+			"containerEventDateTime",
+			"initiateNetFlow",
+			"callNetFlowUI",
+			"reset",
+			"last",
+			"setNetflowRealtimeView",
+			"netflow",
+			"update()",
+			"update",
+			"setNetflowRealtimeView",
+			"setMode",
+			"real",
+			"edit",
+			"border_right",
+			"border",
+			"h1",
+			"panel-dashboard",
+			"pad",
+			"refreshNFMonitors",
+			"timeout",
+			"time",
+			"deb",
+			"title",
+			"timeout",
+			"grunt_exec",
+			"build",
+			"processingFeeds",
+			"git:",
+			"Cannot load",
+			"Cannot load compass",
+			"tabs",
+			"tab",
+			"tabs",
+			"high",
+			"ng-repeat=\"pane in panes\" ng-class=\"{active:pane.selected}\" ng-class-even=\"'even'\" ng-click=\"select(pane)\"",
+			"<!-- end ngRepeat: item in pane.tabIcons -->",
+			" ng-repeat=\"item in pane.tabIcons\"",
+			"<!-- end ngRepeat: item in pane.tabIcons -->",
+			"<!-- ngRepeat: item in pane.tabIcons -->",
+			"setNetflowRealtimeView",
+			"timeout",
+			"setCH",
+			"timeout",
+			"timer",
+			"root",
+			"0",
+			"initNetflowData",
+			"console",
 			"load",
-			"successKey",
-			"errorKey",
-			"successKey",
-			"msgKey",
-			"success",
-			"read more",
-			"comment",
-			"data-wt",
-			"icn-like",
-			"10",
-			"carous",
-			"icn-gold-badge",
-			"icn-arrow-down",
-			"icn-unsub",
-			"profile",
-			"publish",
-			"!importa",
-			"video",
-			"plug",
-			"video",
-			"offset",
-			"exten",
-			"indica",
-			"main-form",
-			"#main-form",
-			"blog-",
-			"callout",
-			"gold",
-			"volume",
-			"getPosts",
-			"getFlavorMakers",
-			"getPosts",
-			"isSw",
-			"side",
-			"error1",
-			"clickEdit",
-			"smsform",
-			"offer",
-			"location",
-			"extend",
-			"loadMoreCallback",
-			"loadmore",
-			"load more",
-			"extendUrl",
-			"activityModal",
-			"setActivityTimer",
-			"extend",
-			"m_fl",
-			"nav",
-			"getCurrentFlavorMaker",
-			"getPosts",
-			"getPostByVolUrl",
-			"dcsMultiTrack",
-			"carousel.change",
-			"arrow-dow",
-			"data-filter",
-			"ranch",
-			"<#",
-			"trips",
-			"ismam",
-			"this.scrollWidth",
-			"bb-o",
-			"gallery",
-			"facebook",
-			"this.publish('frm.success'",
-			"succes",
-			"DOI",
-			"m_",
-			"DOI",
-			"DOISt",
-			"selec"
+			"loader",
+			"conso",
+			"$timeout",
+			"timeout",
+			"time",
+			"isDisabled",
+			"processingNow",
+			"ProcessingNow",
+			"processingNow",
+			"getS",
+			"scheduleOnce",
+			"ProcessingNow",
+			"processingNow",
+			"process",
+			"getLatestSchedule",
+			"$timeout",
+			"timeout",
+			"schedule.hour",
+			"$scope.up",
+			"setHours",
+			"save",
+			"initData",
+			"isD",
+			"isdis",
+			"instUri",
+			"initNetflowData",
+			"updateData",
+			"loadData",
+			"$scope.loadData",
+			"$scope.getSchedule",
+			"$scope.isFailed",
+			"$scope.isSuccessful",
+			"initiateNetFlow",
+			"call",
+			"loading",
+			"initNetflowData",
+			"loading",
+			"initNetflowData",
+			"$scope.update",
+			"$scope.init",
+			"$scope.resizeChart",
+			"$scope.getTableConfig",
+			"$scope.getChartConfig",
+			"$scope.initNetflowData",
+			"$scope.getTimes",
+			"$scope.setNetflowRealtimeView",
+			"$scope.getTables",
+			"$scope.getCharts",
+			"$scope.initChart",
+			"$scope.setTableData",
+			"$scope.setChartData",
+			"$scope.addPoint",
+			"turboThreshold",
+			"setNetflowRealtimeView",
+			"getCharts",
+			"reg",
+			"regex",
+			"setLanguage",
+			"input",
+			"$filte",
+			"\"key\":",
+			"getNext"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -767,86 +418,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"m_site",
-			"?dest=${contextRoot}",
-			"pl-unique",
-			"pl-blue",
-			"pl-green",
-			"green",
-			"\"url\":\"/marlboro/$",
-			"\"url\":\"/marlboro/",
-			"selected=\"selected\"</#if>",
-			"/m-",
-			"</span></div></li>",
-			"<span>",
-			"<img src=\"/content/products",
-			"width=\"100%\"",
-			"width=\"100%\" height=\"100%\"></a><span>",
-			"${",
-			"${m_securityToken!\"\"}",
-			"${m_securityToken}",
-			"weeksdescription",
-			"weekssubheader",
-			"${contextRoot}/black-book/${m_blogs[key].theblackbook.blog.date",
-			"/black",
-			"/",
-			"/black-book",
-			"@{imagesBasePath}",
-			"${contextRoot}",
-			"${appRoot}",
-			"name=\"ccn\" value=\"${m_profile.ccn}\"",
-			".state == \"",
-			"<#if m_profile.state",
-			"altria.toggleElems(",
-			"<!--#include virtual=\"/includes/footer-desktop.shtml\" -->",
-			"<!--#include virtual=\"/includes/header-desktop.shtml\" -->",
-			"",
-			"@color7",
-			"@color8",
-			"@color9",
-			"@color7",
-			"@color0",
-			"@color6",
-			"@color5",
-			"@color4",
-			"@color3",
-			"@color2",
-			"@color1",
-			"<!--#include virtual=\"/includes/head-desktop.shtml\" -->",
-			"altria.toggle",
-			"<!--#include virtual=\"/includes/footer-mobile.shtml\" -->",
-			"<!--#include virtual=\"/includes/footer.shtml\" -->",
-			"<!--#include virtual=\"/includes/footer-mobile.shtml\" -->",
-			"altria.init",
-			"js/altria",
-			"altria",
-			"this.el",
-			"<!--#include v<div id=\"container\">\n   <!--#include virtual=\"/includes/header-mobile.shtml\" -->\n   <div id=\"container\">\n<div id=\"container\">\n",
-			"<body>",
-			" <script type=\"text/javascript\">",
-			"   <script type=\"text/javascript\">",
-			"<script type=\"text/javascript\" src=\"js/marlboro.thin.js\"></script>\n<script type=\"text/javascript\">\n        $(document).ready(function(){\n            marlboro.init();\n        });\n    </script>",
-			"",
-			"<!--#include virtual=\"/includes/header-mobile.shtml\" -->",
-			"href=\"/css/phone.min.css\">",
-			"<script type=\"text/javascript\" src=\"js/marlboro.thin.js\"></script>",
-			"<script type=\"text/javascript\" src=\"js/marlboro.min.js\"></script>",
-			"<script type=\"text/javascript\" src=\"js/marlboro.thin.js\"></script>",
-			"marlboro.msgs",
-			"'msg').split",
-			"el.data('msg'",
-			"el.data('",
-			"data-",
-			"desktop.min.css",
-			"",
-			",display: 'none'",
-			"display: none",
-			"'visibility': 'hidden'",
-			"'visibility': hidden'",
-			"style: 'visibility: hidden'",
-			"style: 'hidden',",
-			"demo",
-			".isTablet"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -857,22 +428,23 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/_posts/2013-05-25-front-end-web-development-is-the-most-difficult-programming-job-in-the-world.markdown",
+					"file": "blog.sublime-project",
 					"settings":
 					{
-						"buffer_size": 6009,
+						"buffer_size": 63,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5880,
-								5880
+								63,
+								63
 							]
 						],
 						"settings":
@@ -883,6 +455,40 @@
 								"README",
 								"FIXME"
 							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
 							"gjslint_ignore":
 							[
 								110.0
@@ -890,7 +496,6 @@
 							"gjslint_options":
 							[
 							],
-							"incomplete_sync": null,
 							"javascript_linter": "jshint",
 							"jshint_options":
 							{
@@ -901,17 +506,18 @@
 								"trailing": true,
 								"wsh": true
 							},
+							"pep8": true,
 							"pep8_ignore":
 							[
 								"E501"
 							],
+							"perl_linter": "perlcritic",
 							"pyflakes_ignore":
 							[
 							],
 							"pyflakes_ignore_import_*": true,
-							"remote_loading": false,
 							"sublimelinter": true,
-							"sublimelinter_delay": 0.0,
+							"sublimelinter_delay": 2.0,
 							"sublimelinter_disable":
 							[
 							],
@@ -919,20 +525,23 @@
 							{
 							},
 							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
 							"sublimelinter_notes": false,
 							"sublimelinter_objj_check_ascii": false,
 							"sublimelinter_popup_errors_on_save": false,
 							"sublimelinter_syntax_map":
 							{
-								"Python Django": "python"
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"synced": false,
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1923.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -942,7 +551,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 34.0
+		"height": 0.0
 	},
 	"input":
 	{
@@ -975,13 +584,9 @@
 	{
 		"height": 100.0
 	},
-	"output.sftp":
-	{
-		"height": 0.0
-	},
 	"replace":
 	{
-		"height": 64.0
+		"height": 0.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -990,24 +595,24 @@
 		"selected_items":
 		[
 			[
-				"w",
-				"m3.sublime-workspace"
+				"main.jsp",
+				"src/jclient/WebConsole/proofui/war_staging/WEB-INF/views/main.jsp"
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 0.0,
 		"selected_items":
 		[
 		],
-		"width": 380.0
+		"width": 0.0
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 294.0,
+	"side_bar_width": 295.0,
 	"status_bar_visible": true
 }
