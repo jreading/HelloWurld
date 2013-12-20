@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Desktop First: A Reverse Do-Nothing, Responsive Anti-Pattern - Always On</title>
+  <title>Uploading Files in AngularJS - Always On</title>
   <meta name="author" content="J.Reading">
 
   
-  <meta name="description" content="Well now that I got your attention&#8230; When looking for a good strategy for implementing a responsive design, web devs are bombarded with tons of &hellip;">
+  <meta name="description" content="Of all the things that AngularJS makes easy, files uploads aren&#8217;t one of them. You can grab some OPC (other peoples&#8217; code) or ignore IE9 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern">
+  <link rel="canonical" href="http://HelloWurld.heroku.com/blog/2013/12/19/uploading-files-in-angular">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -63,7 +63,7 @@
   
   <header>
     
-      <h1 class="entry-title">Desktop First: A Reverse Do-Nothing, Responsive Anti-Pattern</h1>
+      <h1 class="entry-title">Uploading Files in AngularJS</h1>
     
     
       <p class="meta">
@@ -79,23 +79,32 @@
   
 
 
-<time datetime="2012-03-22T09:33:00-04:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2012</time>
+<time datetime="2013-12-19T20:45:00-05:00" pubdate data-updated="true">Dec 19<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Well now that I got your attention&#8230;</p>
+<div class="entry-content"><p>Of all the things that AngularJS makes easy, files uploads aren&#8217;t one of them. You can grab some <a href="https://github.com/danialfarid/angular-file-upload">OPC (other peoples&#8217; code)</a> or ignore IE9.</p>
 
-<p>When looking for a good strategy for implementing a responsive design, web devs are bombarded with tons of techniques, libraries, polyfills, and workarounds. Most of the time, we don&#8217;t need them. <!--more--></p>
+<!-- more -->
 
-<p>The &#8220;mobile-first&#8221; approach towards building a site can necessitate the use of polyfills for legacy desktop browsers or just <a href="http://starbucks.com">an awful looking desktop experience</a>.</p>
 
-<p>Looking at <a href="http://coding.smashingmagazine.com/2011/08/10/techniques-for-gracefully-degrading-media-queries/#comment-545128">this comment from a smashing mag post on responsive techniques</a>, this seems like the simpliest approach considering there&#8217;s no need to worry about fallbacks, polyfills, and other workarounds. Why do we have respond.js, Modernzr.mq, jQueryMobile CSS hacks and the like&#8230;?</p>
+<figure class='code'><figcaption><span>template.html</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;input</span>
+</span><span class='line'>  <span class="na">type=</span><span class="s">&quot;file&quot;</span>
+</span><span class='line'>  <span class="na">onchange=</span><span class="s">&quot;angular.element(this).scope().myController.uploadFile(this.files[0]);&quot;</span>
+</span><span class='line'><span class="nt">/&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<figure class='code'><figcaption><span>desktop-first.css  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+
+
+
+<figure class='code'><figcaption><span>controller.js</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -112,33 +121,27 @@
 <span class='line-number'>15</span>
 <span class='line-number'>16</span>
 <span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nf">#main</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">width</span><span class="o">:</span> <span class="m">960px</span><span class="p">;</span> <span class="c">/*oh so fixed width*/</span>
-</span><span class='line'><span class="p">}</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">uploadFile</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span> <span class="p">{</span>
 </span><span class='line'>
-</span><span class='line'><span class="nt">header</span> <span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
-</span><span class='line'>  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">formData</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FormData</span><span class="p">();</span>
 </span><span class='line'>
-</span><span class='line'><span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">400px</span><span class="o">)</span> <span class="p">{</span>
-</span><span class='line'>  <span class="nf">#main</span> <span class="p">{</span>
-</span><span class='line'>      <span class="k">width</span><span class="o">:</span> <span class="m">100</span><span class="o">%</span><span class="p">;</span>
-</span><span class='line'>      <span class="k">max-width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="nt">header</span> <span class="nt">nav</span> <span class="nt">li</span> <span class="p">{</span>
-</span><span class='line'>      <span class="k">float</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span>
-</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">$scope</span><span class="p">.</span><span class="nx">$digest</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">formData</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="nx">file</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">$http</span><span class="p">({</span>
+</span><span class='line'>      <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;url-to-accept-file&#39;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">data</span><span class="o">:</span> <span class="nx">formData</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span> <span class="s1">&#39;Content-Type&#39;</span><span class="o">:</span> <span class="kc">undefined</span> <span class="p">},</span>
+</span><span class='line'>      <span class="nx">transformRequest</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="nx">data</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>  <span class="p">})</span>
+</span><span class='line'>  <span class="p">.</span><span class="nx">success</span><span class="p">(</span><span class="nx">handleSuccess</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">handleError</span><span class="p">);</span>
 </span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
-
-<p>Combine a few (read: keep it simple) of these with <a href="http://www.leemunroe.com/ie-rounded-corners-css3/">aggressive</a> <a href="https://twitter.com/#!/zeldman/statuses/170930936718950400">enhancement</a>, and a few <a href="http://www.leemunroe.com/adaptive-responsive/">fully responsive techniques</a> and it seems like everything else is just cruft.</p>
-
-<p>What if you want to have access to that media query capability in your js? Well, then <a href="http://www.nczonline.net/blog/2012/01/03/css-media-queries-in-javascript-part-1/">you&#8217;re doing it wrong</a>. Styles shouldn&#8217;t ever be bound to so tightly to your app or widget, or even content for that matter.</p>
-
-<p>Large images in CSS? Don&#8217;t do it. Use fluid images or data-attrs to lazy load the right size from the markup.</p>
-
-<p>One last thing, if we take the trending approach <a href="http://coding.smashingmagazine.com/2012/03/22/device-agnostic-approach-to-responsive-web-design/">such as this by Thierry Koblentz (who&#8217;s a genuine hero)</a> of &#8220;device agnostic,&#8221; there&#8217;s still a presumption that it&#8217;s oldIE or media-query capable. Not a totally unsafe assumption, but when we talk about the &#8220;internet of things,&#8221; who knows&#8230;</p>
 </div>
 
 
@@ -161,15 +164,21 @@
   
 
 
-<time datetime="2012-03-22T09:33:00-04:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2012</time>
+<time datetime="2013-12-19T20:45:00-05:00" pubdate data-updated="true">Dec 19<span>th</span>, 2013</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/angular/'>angular</a>, <a class='category' href='/blog/categories/progressive-enhancement/'>progressive enhancement</a>, <a class='category' href='/blog/categories/web-dev/'>web dev</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern/" data-via="JohnnyReading" data-counturl="http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://HelloWurld.heroku.com/blog/2013/12/19/uploading-files-in-angular/" data-via="JohnnyReading" data-counturl="http://HelloWurld.heroku.com/blog/2013/12/19/uploading-files-in-angular/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -180,10 +189,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/03/19/first-post/" title="Previous Post: first post">&laquo; first post</a>
+        <a class="basic-alignment left" href="/blog/2013/11/19/bootstrapping-angularjs-in-existing-application-frameworks/" title="Previous Post: Bootstrapping AngularJS in Existing Application Frameworks">&laquo; Bootstrapping AngularJS in Existing Application Frameworks</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/04/17/very-important-matters/" title="Next Post: Very Important Matters">Very Important Matters &raquo;</a>
       
     </p>
   </footer>
@@ -254,8 +261,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern/';
-        var disqus_url = 'http://HelloWurld.heroku.com/blog/2012/03/22/desktop-first-a-reverse-do-nothing-responsive-anti-pattern/';
+        var disqus_identifier = 'http://HelloWurld.heroku.com/blog/2013/12/19/uploading-files-in-angular/';
+        var disqus_url = 'http://HelloWurld.heroku.com/blog/2013/12/19/uploading-files-in-angular/';
         var disqus_script = 'embed.js';
       
     (function () {
