@@ -4,7 +4,7 @@
   <title><![CDATA[Category: progressive enhancement | Always On]]></title>
   <link href="http://HelloWurld.heroku.com/blog/categories/progressive-enhancement/atom.xml" rel="self"/>
   <link href="http://HelloWurld.heroku.com/"/>
-  <updated>2013-12-19T21:34:10-05:00</updated>
+  <updated>2014-04-02T11:53:46-04:00</updated>
   <id>http://HelloWurld.heroku.com/</id>
   <author>
     <name><![CDATA[J.Reading]]></name>
@@ -19,6 +19,8 @@
     <updated>2013-12-19T20:45:00-05:00</updated>
     <id>http://HelloWurld.heroku.com/blog/2013/12/19/uploading-files-in-angular</id>
     <content type="html"><![CDATA[<p>Of all the things that AngularJS makes easy, files uploads aren't one of them. You can grab some <a href="https://github.com/danialfarid/angular-file-upload">OPC (other peoples' code)</a> or ignore IE9.</p>
+
+<p>EDIT 4/2: <a href="https://github.com/nervgh/angular-file-upload">This one</a> does not use Flash, so that's good.</p>
 
 <!-- more -->
 

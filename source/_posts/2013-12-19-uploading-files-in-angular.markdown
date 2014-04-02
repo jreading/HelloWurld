@@ -8,6 +8,8 @@ categories:  [angular, web dev, progressive enhancement]
 
 Of all the things that AngularJS makes easy, files uploads aren't one of them. You can grab some [OPC (other peoples' code)](https://github.com/danialfarid/angular-file-upload) or ignore IE9. 
 
+EDIT 4/2: [This one](https://github.com/nervgh/angular-file-upload) does not use Flash, so that's good.
+
 <!-- more -->
 ```html template.html
 <input 
