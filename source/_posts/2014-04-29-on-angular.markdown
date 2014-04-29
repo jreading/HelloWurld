@@ -76,3 +76,5 @@ ThatThing.update({id:5},{'foo':'bar'},function(data){
 });
 ```
 Now, you can get crazy in your services and let your controllers do what they are supposed to: *very little*.
+
+h/t to [Vladikoff](https://twitter.com/vladikoff/status/456852882252632064) who showed me this [gist](https://gist.github.com/vladikoff/11001070).
